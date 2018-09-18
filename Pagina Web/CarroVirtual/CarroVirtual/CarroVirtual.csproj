@@ -114,6 +114,7 @@
     <Compile Include="eliminarProducto.aspx.designer.cs">
       <DependentUpon>eliminarProducto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContrProductos.cs" />
     <Compile Include="indexAdmin.aspx.cs">
       <DependentUpon>indexAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

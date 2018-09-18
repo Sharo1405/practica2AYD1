@@ -31,10 +31,10 @@ namespace CarroVirtual
             categoria.cod_categoria = Convert.ToInt32(combo_categorias.SelectedValue);
 
             //SI EL PROUDCTO NO HA SIDO INGRESADO YA
-            if (!Conexion.ExisteProducto(producto,categoria))
+            if (!ContrProductos.ExisteProducto(producto,categoria))
             {
                 //INGRESO A LA BASE DE DATOS
-                Conexion.CrearProducto(producto, categoria);
+                ContrProductos.CrearProducto(producto, categoria);
 
                 //MUESTRO MENSAJE DE EXITO
                 Conexion.MsgBox("Producto Registrado con éxito!", this.Page, this);
