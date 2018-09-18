@@ -75,10 +75,5 @@ namespace CarroVirtual
             try { combo_categoria.SelectedValue = producto.categoria_cod_categoria.ToString(); } catch (Exception) { }
             CambiarImagen();
         }
-
-        protected void txt_cantidad_TextChanged(object sender, EventArgs e)
-        {
-            Response.Write("escribe..");
-        }
     }
 }
