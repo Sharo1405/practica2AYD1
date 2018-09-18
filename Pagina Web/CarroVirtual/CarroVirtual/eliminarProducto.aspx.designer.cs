@@ -22,6 +22,15 @@ namespace CarroVirtual {
         protected global::System.Web.UI.WebControls.TextBox txt_buscar;
         
         /// <summary>
+        /// Control btn_buscar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_buscar;
+        
+        /// <summary>
         /// Control txt_codigo.
         /// </summary>
         /// <remarks>

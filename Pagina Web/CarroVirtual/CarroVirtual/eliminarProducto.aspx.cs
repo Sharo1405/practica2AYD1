@@ -14,6 +14,18 @@ namespace CarroVirtual
 
         }
 
+        protected void btn_buscar_Click(object sender, EventArgs e)
+        {
+            //BUSCO EL PRODUCTO POR NOMBRE O POR CODIGO
+            Producto producto = Conexion.BuscarProducto(txt_buscar.Text);
+
+            //MUESTRO LOS VALORES OBTENIDOS
+            txt_codigo.Text = producto.cod_producto.ToString();
+            txt_nombre.Text = producto.nombre;
+            combo_categoria.SelectedIndex = producto.categoria_cod_categoria;
+            CambiarImagen();
+        }
+
         protected void btn_eliminar_Click(object sender, EventArgs e)
         {
             //OBTENGO EL PRODUCTO SELECCIONADO
@@ -48,18 +60,6 @@ namespace CarroVirtual
             //MUESTRO LA IMAGEN
             String base64String = Convert.ToBase64String(Conexion.ObtenerImagenProducto(cod_producto), 0, Conexion.ObtenerImagenProducto(cod_producto).Length);
             imgProducto.ImageUrl = "data:image/jpeg;base64," + base64String;
-        }
-
-        protected void txt_buscar_TextChanged(object sender, EventArgs e)
-        {
-            //BUSCO EL PRODUCTO POR NOMBRE O POR CODIGO
-            Producto producto = Conexion.BuscarProducto(txt_buscar.Text);
-
-            //MUESTRO LOS VALORES OBTENIDOS
-            txt_codigo.Text = producto.cod_producto.ToString();
-            txt_nombre.Text = producto.nombre;
-            combo_categoria.SelectedIndex = producto.categoria_cod_categoria;
-            CambiarImagen();
         }
     }
 }

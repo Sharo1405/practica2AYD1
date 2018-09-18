@@ -5,8 +5,12 @@
 
 					<div class="wrap-input100 validate-input m-b-23">
 						<span class="label-input100">Busque un producto por nombre o código</span>
-						<asp:TextBox class="input100" runat="server" id="txt_buscar" OnTextChanged="txt_buscar_TextChanged"></asp:TextBox>
+						<asp:TextBox class="input100" runat="server" id="txt_buscar"></asp:TextBox>
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					</div>
+
+                    <div class="wrap-input100 m-b-23">
+						<asp:Button class="input100" runat="server" id="btn_buscar" Text="Buscar" OnClick="btn_buscar_Click"></asp:Button>
 					</div>
 
                     <div class="wrap-input100 validate-input m-b-23">

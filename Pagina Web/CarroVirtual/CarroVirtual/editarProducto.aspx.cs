@@ -18,7 +18,7 @@ namespace CarroVirtual
         {
             //CREO EL PRODUCTO CON LOS DATOS A CAMBIAR
             Producto producto = new Producto();
-            producto.cod_producto = Convert.ToInt32(txt_codigo);
+            producto.cod_producto = Convert.ToInt32(txt_codigo.Text);
             producto.cantidad = Convert.ToInt32(txt_cantidad.Text);
             producto.precio_venta = Convert.ToInt32(txt_precio_venta.Text);
             producto.detalles = txt_detalles.Text;
@@ -59,8 +59,10 @@ namespace CarroVirtual
             imgProducto.ImageUrl = "data:image/jpeg;base64," + base64String;
         }
 
-        protected void txt_buscar_TextChanged(object sender, EventArgs e)
+        protected void btn_buscar_Click(object sender, EventArgs e)
         {
+            Response.Write("hola");
+
             //BUSCO EL PRODUCTO POR NOMBRE O POR CODIGO
             Producto producto = Conexion.BuscarProducto(txt_buscar.Text);
 
@@ -70,7 +72,7 @@ namespace CarroVirtual
             txt_cantidad.Text = producto.cantidad.ToString();
             txt_detalles.Text = producto.detalles;
             txt_precio_venta.Text = producto.precio_venta.ToString();
-            combo_categoria.SelectedIndex = producto.categoria_cod_categoria;
+            combo_categoria.SelectedValue = producto.categoria_cod_categoria.ToString();
             CambiarImagen();
         }
     }

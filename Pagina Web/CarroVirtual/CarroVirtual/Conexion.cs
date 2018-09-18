@@ -67,7 +67,7 @@ namespace CarroVirtual
         internal static void EliminarProducto(int cod_producto)
         {
             SqlConnection con = ObtenerConexion();
-            SqlCommand cmd = new SqlCommand("DELETE FROM producto WHERE cod_producto = "+cod_producto+"", con);
+            SqlCommand cmd = new SqlCommand("DELETE producto WHERE cod_producto = "+cod_producto+"", con);
             int s = cmd.ExecuteNonQuery();
             con.Close();
         }
@@ -75,7 +75,7 @@ namespace CarroVirtual
         internal static void EditarProducto(Producto producto)
         {
             SqlConnection con = ObtenerConexion();
-            SqlCommand cmd = new SqlCommand("UPDATE FROM producto SET nombre = '"+producto.nombre+"', cantidad = "+producto.cantidad+", precio_venta = "+producto.precio_venta+", detalles = '"+producto.detalles+"', categoria_cod_categoria = "+producto.categoria_cod_categoria+", imagen = @IMAGEN WHERE cod_producto = " + producto.cod_producto + "", con);
+            SqlCommand cmd = new SqlCommand("UPDATE producto SET nombre = '"+producto.nombre+"', cantidad = "+producto.cantidad+", precio_venta = "+producto.precio_venta+", detalles = '"+producto.detalles+"', categoria_cod_categoria = "+producto.categoria_cod_categoria+", imagen = @IMAGEN WHERE cod_producto = " + producto.cod_producto + "", con);
             cmd.Parameters.Add("@IMAGEN", System.Data.SqlDbType.VarBinary).Value = producto.imagen;
             int s = cmd.ExecuteNonQuery();
             con.Close();
