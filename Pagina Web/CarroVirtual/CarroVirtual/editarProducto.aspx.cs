@@ -72,8 +72,13 @@ namespace CarroVirtual
             txt_cantidad.Text = producto.cantidad.ToString();
             txt_detalles.Text = producto.detalles;
             txt_precio_venta.Text = producto.precio_venta.ToString();
-            combo_categoria.SelectedValue = producto.categoria_cod_categoria.ToString();
+            try { combo_categoria.SelectedValue = producto.categoria_cod_categoria.ToString(); } catch (Exception) { }
             CambiarImagen();
+        }
+
+        protected void txt_cantidad_TextChanged(object sender, EventArgs e)
+        {
+            Response.Write("escribe..");
         }
     }
 }

@@ -33,7 +33,7 @@
 
                     <div class="wrap-input100 validate-input m-b-23">
 						<span class="label-input100">Cantidad</span>
-						<asp:TextBox class="input100" runat="server" id="txt_cantidad"></asp:TextBox>
+						<asp:TextBox class="input100" runat="server" id="txt_cantidad" OnTextChanged="txt_cantidad_TextChanged" AutoPostBack="true"></asp:TextBox>
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
