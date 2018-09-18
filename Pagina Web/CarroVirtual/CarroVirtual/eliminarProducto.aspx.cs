@@ -22,7 +22,7 @@ namespace CarroVirtual
             //MUESTRO LOS VALORES OBTENIDOS
             txt_codigo.Text = producto.cod_producto.ToString();
             txt_nombre.Text = producto.nombre;
-            combo_categoria.SelectedIndex = producto.categoria_cod_categoria;
+            try { combo_categoria.SelectedValue = producto.categoria_cod_categoria.ToString(); } catch (Exception) { }
             CambiarImagen();
         }
 
