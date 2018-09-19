@@ -132,7 +132,6 @@
     <Compile Include="eliminarProducto.aspx.designer.cs">
       <DependentUpon>eliminarProducto.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Eliminar_categoria.aspx.cs">
       <DependentUpon>Eliminar_categoria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -141,9 +140,7 @@
       <DependentUpon>Eliminar_categoria.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gestion_categoria_crud.cs" />
-=======
     <Compile Include="ContrProductos.cs" />
->>>>>>> 32dd9a94f1ce87e33d830bfea8eb3f94be27071e
     <Compile Include="indexAdmin.aspx.cs">
       <DependentUpon>indexAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
