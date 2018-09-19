@@ -28,5 +28,21 @@ namespace CarroVirtual
         {
             Response.Redirect("editarProducto.aspx");
         }
+
+
+        protected void crear_categoria(object sender, EventArgs e)
+        {
+            Response.Redirect("Crear_categoria.aspx");
+        }
+
+        protected void eliminar_categoria(object sender, EventArgs e)
+        {
+            Response.Redirect("Eliminar_categoria.aspx");
+        }
+
+        protected void editar_categoria(object sender, EventArgs e)
+        {
+            Response.Redirect("Editar_categoria.aspx");
+        }
     }
 }

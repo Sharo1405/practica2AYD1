@@ -50,6 +50,19 @@
                                         </a>
                                     </div>
 
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="has-dropdown">
+							                    <a>Administrar Categorias</a>
+							                    <ul class="dropdown">
+                                                    <li><asp:LinkButton OnClick="crear_categoria" runat="server" ID="LinkButton1" text="Crear Categoria" Visible="true"></asp:LinkButton></li>
+                                                    <li><asp:LinkButton OnClick="eliminar_categoria" runat="server" ID="LinkButton2" text="Eliminar Categoria" Visible="true"></asp:LinkButton></li>
+                                                    <li><asp:LinkButton OnClick="editar_categoria" runat="server" ID="LinkButton3" text="Editar Categoria" Visible="true"></asp:LinkButton></li>
+							                    </ul>
+						                    </li>
+                                        </ul>    
+                                    </div>
+
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                         <ul class="nav navbar-nav navbar-right">
                                             <li class="has-dropdown">
@@ -101,7 +114,7 @@
 
                         <div class="col-sm-6 col-xs-12">
                             <div class="copyright_text">
-                                <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by KokaSnow 2018. All Rights Reserved</p>
+                                <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by Grupo#7 2018. All Rights Reserved</p>
                             </div>
                         </div>
 

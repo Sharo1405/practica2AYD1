@@ -34,10 +34,12 @@ namespace CarroVirtual
     {
         public String nombre { get; set; }
         public int cod_categoria { get; set; }
+        public String descripcion { get; set; }
 
         public Categoria(){
             this.nombre = "";
             this.cod_categoria = 0;
+            this.descripcion = "";
         }
     }
 }

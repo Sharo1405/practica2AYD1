@@ -18,7 +18,8 @@ CREATE TABLE producto(
 
 CREATE TABLE categoria(
 	cod_categoria INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-	nombre VARCHAR(200)
+	nombre VARCHAR(200),
+	descripcion VARCHAR(200)
 );
 
 ALTER TABLE producto

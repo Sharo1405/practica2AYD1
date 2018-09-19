@@ -9,7 +9,7 @@ namespace CarroVirtual
 {
     public class Conexion
     {
-        public static String cadenaConexion = "Data Source=ING\\SQLEXPRESS;Initial Catalog=p2;Integrated Security=True";
+        public static String cadenaConexion = "Data Source=SHAROLIN\\SQLEXPRESS;Initial Catalog=p2;Integrated Security=True";
 
         //<======================= CONEXION A LA BASE DE DATOS ===========================================
         public static SqlConnection ObtenerConexion()
