@@ -30,11 +30,11 @@ namespace CarroVirtual
                 producto.imagen = fuimagen.FileBytes;
             }
             else {
-                producto.imagen = Conexion.ObtenerImagenProducto(producto.cod_producto);
+                producto.imagen = ContrProductos.ObtenerImagenProducto(producto.cod_producto);
             }
 
             //EDITO EL PRODUCTO
-            Conexion.EditarProducto(producto);
+            ContrProductos.EditarProducto(producto);
 
             //MUESTRO MENSAJE EXITOSO
             Conexion.MsgBox("Producto editado con éxito!",this.Page,this);
@@ -52,10 +52,10 @@ namespace CarroVirtual
             {
                 return;
             }
-            byte[] imagen = Conexion.ObtenerImagenProducto(cod_producto);
+            byte[] imagen = ContrProductos.ObtenerImagenProducto(cod_producto);
 
             //MUESTRO LA IMAGEN
-            String base64String = Convert.ToBase64String(Conexion.ObtenerImagenProducto(cod_producto), 0, Conexion.ObtenerImagenProducto(cod_producto).Length);
+            String base64String = Convert.ToBase64String(ContrProductos.ObtenerImagenProducto(cod_producto), 0, ContrProductos.ObtenerImagenProducto(cod_producto).Length);
             imgProducto.ImageUrl = "data:image/jpeg;base64," + base64String;
         }
 
@@ -64,7 +64,7 @@ namespace CarroVirtual
             Response.Write("hola");
 
             //BUSCO EL PRODUCTO POR NOMBRE O POR CODIGO
-            Producto producto = Conexion.BuscarProducto(txt_buscar.Text);
+            Producto producto = ContrProductos.BuscarProducto(txt_buscar.Text);
 
             //MUESTRO LOS VALORES OBTENIDOS
             txt_codigo.Text = producto.cod_producto.ToString();
