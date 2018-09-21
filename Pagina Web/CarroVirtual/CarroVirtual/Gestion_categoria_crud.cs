@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -34,6 +35,26 @@ namespace CarroVirtual
             return false;
         }
 
+        public static DataTable ExisteProductoLista()
+        {
+            SqlConnection con = Conexion.ObtenerConexion();
+            SqlCommand cmd = new SqlCommand("SELECT nombre FROM categoria", con);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                con.Close();
+                SqlDataAdapter da = new SqlDataAdapter("SELECT nombre FROM categoria", con);
+                DataTable dt;
+                dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+            con.Close();
+            return null;
+        }
+
+
         public static bool Eliminar_categoria(String nombre)
         {
             int s = 0;
@@ -54,6 +75,32 @@ namespace CarroVirtual
             {
                 return false;
             }
+        }
+
+        public static bool EditarCategoria(Categoria categoria, String nombreActual)
+        {
+            SqlConnection con = Conexion.ObtenerConexion();
+            if (categoria.nombre != "" && categoria.descripcion != "" && nombreActual != "") {
+                SqlCommand cmd = new SqlCommand("UPDATE categoria SET nombre = '" + categoria.nombre + "', descripcion = '" + categoria.descripcion + "' WHERE nombre = '" + nombreActual + "';", con);
+                int s = cmd.ExecuteNonQuery();
+                con.Close();
+                return true;
+            }
+            else if (categoria.nombre != "" && categoria.descripcion == "" && nombreActual != "")
+            {
+                SqlCommand cmd = new SqlCommand("UPDATE categoria SET nombre = '" + categoria.nombre + "' where nombre = '" + nombreActual + "'", con);
+                int s = cmd.ExecuteNonQuery();
+                con.Close();
+                return true;
+            }
+            else if (categoria.nombre == "" && categoria.descripcion != "" && nombreActual != "")
+            {
+                SqlCommand cmd = new SqlCommand("UPDATE categoria SET descripcion = '" + categoria.descripcion + "' where nombre = '" + nombreActual + "'", con);
+                int s = cmd.ExecuteNonQuery();
+                con.Close();
+                return true;
+            }
+            return false;
         }
     }
 }
