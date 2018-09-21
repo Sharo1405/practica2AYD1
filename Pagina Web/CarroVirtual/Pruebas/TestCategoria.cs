@@ -5,7 +5,7 @@ using CarroVirtual;
 namespace Pruebas
 {
     [TestClass]
-    public class UnitTest1
+    public class TestCategoria
     {
         [TestMethod]
         public void TestMethod1()
