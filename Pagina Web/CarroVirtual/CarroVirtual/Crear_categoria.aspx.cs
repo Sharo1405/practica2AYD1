@@ -21,19 +21,18 @@ namespace CarroVirtual
             categoria.nombre = txt_nombre.Text;
             categoria.descripcion = txt_descripcion.Text;
 
-            //SI EL PROUDCTO NO HA SIDO INGRESADO YA
-            if (!Gestion_categoria_crud.ExisteCategoria(categoria))
-            {
-                //INGRESO A LA BASE DE DATOS
-                Gestion_categoria_crud.CrearCategoria(categoria);
+            //INGRESO A LA BASE DE DATOS
+            bool hecho = Gestion_categoria_crud.CrearCategoria(categoria);
 
+            if (hecho)
+            {
                 //MUESTRO MENSAJE DE EXITO
                 Conexion.MsgBox("Categoria Registrada con éxito!", this.Page, this);
             }
             else
             {
-                //MUESTRO MENSAJE DE ERROR
-                Conexion.MsgBox("Error, La categoria ya se encuentra registrada!", this.Page, this);
+                 //MUESTRO MENSAJE DE ERROR
+                 Conexion.MsgBox("Error, La categoria ya se encuentra registrada!/ NO definio el nombre de la categoria", this.Page, this);
             }
             txt_nombre.Text = "";
             txt_descripcion.Text = "";

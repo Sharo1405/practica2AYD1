@@ -10,13 +10,37 @@ namespace CarroVirtual
     public class Gestion_categoria_crud
     {
 
-        public static void CrearCategoria(Categoria categoria)
+        public static bool CrearCategoria(Categoria categoria)
         {
-            SqlConnection con = Conexion.ObtenerConexion();
-            SqlCommand cmd = new SqlCommand("INSERT INTO categoria(nombre, descripcion) " +
-                "VALUES('" + categoria.nombre + "', '" + categoria.descripcion + "'" + ")", con);
-            int s = cmd.ExecuteNonQuery();
-            con.Close();
+            if (categoria.nombre != "")
+            {
+                if (!ExisteCategoria(categoria))
+                {
+                    if (categoria.nombre != "" && categoria.descripcion != "")
+                    {
+                        SqlConnection con = Conexion.ObtenerConexion();
+                        SqlCommand cmd = new SqlCommand("INSERT INTO categoria(nombre, descripcion) " +
+                            "VALUES('" + categoria.nombre + "', '" + categoria.descripcion + "'" + ")", con);
+                        int s = cmd.ExecuteNonQuery();
+                        con.Close();
+                        return true;
+                    }
+                    else if (categoria.nombre != "" && categoria.descripcion == "")
+                    {
+                        SqlConnection con = Conexion.ObtenerConexion();
+                        SqlCommand cmd = new SqlCommand("INSERT INTO categoria(nombre) " +
+                                        "VALUES('" + categoria.nombre + "'" + ")", con);
+                        int s = cmd.ExecuteNonQuery();
+                        con.Close();
+                        return true;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return false;
         }
 
         public static bool ExisteCategoria(Categoria categoria)
