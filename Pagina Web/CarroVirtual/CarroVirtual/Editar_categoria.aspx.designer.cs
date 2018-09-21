@@ -13,6 +13,15 @@ namespace CarroVirtual {
     public partial class Editar_categoria {
         
         /// <summary>
+        /// DropDownList1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        
+        /// <summary>
         /// txt_nombre control.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,15 @@ namespace CarroVirtual {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_nombre;
+        
+        /// <summary>
+        /// txt_descripcion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_descripcion;
         
         /// <summary>
         /// btn_editar_cat control.
