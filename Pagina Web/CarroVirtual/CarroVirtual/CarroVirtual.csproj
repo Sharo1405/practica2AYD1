@@ -69,6 +69,95 @@
     <Content Include="BaseAdmin.Master" />
     <Content Include="BaseAdmin2.Master" />
     <None Include="packages.config" />
+    <Content Include="Tienda\css\addons\datatables.css" />
+    <Content Include="Tienda\css\addons\datatables.min.css" />
+    <Content Include="Tienda\css\bootstrap.css" />
+    <Content Include="Tienda\css\bootstrap.min.css" />
+    <Content Include="Tienda\css\mdb.css" />
+    <Content Include="Tienda\css\mdb.min.css" />
+    <Content Include="Tienda\css\style.css" />
+    <Content Include="Tienda\css\style.min.css" />
+    <Content Include="Tienda\img\fondo1.jpg" />
+    <Content Include="Tienda\img\juegos2.jpg" />
+    <Content Include="Tienda\img\juegos3.jpg" />
+    <Content Include="Tienda\img\lightbox\default-skin.png" />
+    <Content Include="Tienda\img\lightbox\default-skin.svg" />
+    <Content Include="Tienda\img\lightbox\preloader.gif" />
+    <Content Include="Tienda\img\overlays\01.png" />
+    <Content Include="Tienda\img\overlays\02.png" />
+    <Content Include="Tienda\img\overlays\03.png" />
+    <Content Include="Tienda\img\overlays\04.png" />
+    <Content Include="Tienda\img\overlays\05.png" />
+    <Content Include="Tienda\img\overlays\06.png" />
+    <Content Include="Tienda\img\overlays\07.png" />
+    <Content Include="Tienda\img\overlays\08.png" />
+    <Content Include="Tienda\img\overlays\09.png" />
+    <Content Include="Tienda\img\sample.jpg" />
+    <Content Include="Tienda\img\svg\arrow_left.svg" />
+    <Content Include="Tienda\img\svg\arrow_right.svg" />
+    <Content Include="Tienda\js\addons\datatables.js" />
+    <Content Include="Tienda\js\addons\datatables.min.js" />
+    <Content Include="Tienda\js\bootstrap.js" />
+    <Content Include="Tienda\js\bootstrap.min.js" />
+    <Content Include="Tienda\js\jquery-3.3.1.min.js" />
+    <Content Include="Tienda\js\mdb.js" />
+    <Content Include="Tienda\js\mdb.min.js" />
+    <Content Include="Tienda\js\popper.min.js" />
+    <Content Include="Tienda\ListadoProductos.aspx" />
+    <Content Include="Tienda\TiendaTemplate.Master" />
+    <Content Include="Tienda\font\roboto\Roboto-Bold.eot" />
+    <Content Include="Tienda\font\roboto\Roboto-Bold.ttf" />
+    <Content Include="Tienda\font\roboto\Roboto-Bold.woff" />
+    <Content Include="Tienda\font\roboto\Roboto-Bold.woff2" />
+    <Content Include="Tienda\font\roboto\Roboto-Light.eot" />
+    <Content Include="Tienda\font\roboto\Roboto-Light.ttf" />
+    <Content Include="Tienda\font\roboto\Roboto-Light.woff" />
+    <Content Include="Tienda\font\roboto\Roboto-Light.woff2" />
+    <Content Include="Tienda\font\roboto\Roboto-Medium.eot" />
+    <Content Include="Tienda\font\roboto\Roboto-Medium.ttf" />
+    <Content Include="Tienda\font\roboto\Roboto-Medium.woff" />
+    <Content Include="Tienda\font\roboto\Roboto-Medium.woff2" />
+    <Content Include="Tienda\font\roboto\Roboto-Regular.eot" />
+    <Content Include="Tienda\font\roboto\Roboto-Regular.ttf" />
+    <Content Include="Tienda\font\roboto\Roboto-Regular.woff" />
+    <Content Include="Tienda\font\roboto\Roboto-Regular.woff2" />
+    <Content Include="Tienda\font\roboto\Roboto-Thin.eot" />
+    <Content Include="Tienda\font\roboto\Roboto-Thin.ttf" />
+    <Content Include="Tienda\font\roboto\Roboto-Thin.woff" />
+    <Content Include="Tienda\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="Tienda\scss\addons\_datatables.scss" />
+    <Content Include="Tienda\scss\core\bootstrap\_functions.scss" />
+    <Content Include="Tienda\scss\core\bootstrap\_variables.scss" />
+    <Content Include="Tienda\scss\core\_colors.scss" />
+    <Content Include="Tienda\scss\core\_global.scss" />
+    <Content Include="Tienda\scss\core\_helpers.scss" />
+    <Content Include="Tienda\scss\core\_masks.scss" />
+    <Content Include="Tienda\scss\core\_mixins.scss" />
+    <Content Include="Tienda\scss\core\_typography.scss" />
+    <Content Include="Tienda\scss\core\_variables.scss" />
+    <Content Include="Tienda\scss\core\_waves.scss" />
+    <Content Include="Tienda\scss\free\_animations-basic.scss" />
+    <Content Include="Tienda\scss\free\_animations-extended.scss" />
+    <Content Include="Tienda\scss\free\_badges.scss" />
+    <Content Include="Tienda\scss\free\_buttons.scss" />
+    <Content Include="Tienda\scss\free\_cards.scss" />
+    <Content Include="Tienda\scss\free\_carousels.scss" />
+    <Content Include="Tienda\scss\free\_depreciated.scss" />
+    <Content Include="Tienda\scss\free\_dropdowns.scss" />
+    <Content Include="Tienda\scss\free\_footers.scss" />
+    <Content Include="Tienda\scss\free\_forms.scss" />
+    <Content Include="Tienda\scss\free\_input-group.scss" />
+    <Content Include="Tienda\scss\free\_list-group.scss" />
+    <Content Include="Tienda\scss\free\_modals.scss" />
+    <Content Include="Tienda\scss\free\_msc.scss" />
+    <Content Include="Tienda\scss\free\_navbars.scss" />
+    <Content Include="Tienda\scss\free\_pagination.scss" />
+    <Content Include="Tienda\scss\free\_switch.scss" />
+    <Content Include="Tienda\scss\free\_tables.scss" />
+    <Content Include="Tienda\scss\mdb.scss" />
+    <Content Include="Tienda\scss\style.scss" />
+    <Content Include="Tienda\scss\_custom-styles.scss" />
+    <Content Include="Tienda\scss\_custom-variables.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -85,6 +174,7 @@
     <Content Include="indexAdmin.aspx" />
     <Content Include="Login_Admin.aspx" />
     <Content Include="registrarProducto.aspx" />
+    <Content Include="Tienda\CardProducto.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +252,28 @@
     </Compile>
     <Compile Include="registrarProducto.aspx.designer.cs">
       <DependentUpon>registrarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tienda\ContrMostrarProductos.cs" />
+    <Compile Include="Tienda\ListadoProductos.aspx.cs">
+      <DependentUpon>ListadoProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tienda\ListadoProductos.aspx.designer.cs">
+      <DependentUpon>ListadoProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tienda\TiendaTemplate.Master.cs">
+      <DependentUpon>TiendaTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tienda\TiendaTemplate.Master.designer.cs">
+      <DependentUpon>TiendaTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tienda\CardProducto.ascx.cs">
+      <DependentUpon>CardProducto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tienda\CardProducto.ascx.designer.cs">
+      <DependentUpon>CardProducto.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
