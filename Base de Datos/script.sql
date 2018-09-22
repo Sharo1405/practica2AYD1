@@ -24,4 +24,5 @@ CREATE TABLE categoria(
 
 ALTER TABLE producto
     ADD CONSTRAINT producto_categoria_fk FOREIGN KEY ( categoria_cod_categoria )
+
         REFERENCES categoria ( cod_categoria ) ON DELETE CASCADE;
