@@ -15,3 +15,7 @@ C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\P
 C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csproj.CopyComplete
 C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.dll
 C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.pdb
+C:\Users\Leonel Flores\Documents\GitHub\REPO2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csprojAssemblyReference.cache
+C:\Users\Leonel Flores\Documents\GitHub\REPO2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csproj.CoreCompileInputs.cache
+C:\Users\Leonel Flores\Documents\GitHub\REPO2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.dll
+C:\Users\Leonel Flores\Documents\GitHub\REPO2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.pdb

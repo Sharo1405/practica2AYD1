@@ -33,7 +33,7 @@
                 </strong>
             </h5>
 
-            <h4 class="font-weight-bold blue-text">
+            <h4 class="font-weight-bold blue-grey-text">
                 <strong>
                     $
                     <%= ProductoCarrito.precio %>

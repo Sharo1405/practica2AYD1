@@ -12,7 +12,7 @@
     <div class="container">
 
       <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
+      <nav class="navbar navbar-expand-lg navbar-dark mdb-color  special-color-dark mt-3 mb-5">
 
         <!-- Navbar brand -->
         <span class="navbar-brand">Categories:</span>
@@ -55,9 +55,11 @@
             <div class="md-form my-2">
               <!--input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"-->
               <asp:TextBox class="form-control mr-sm-2" ID="searchText" runat="server" ></asp:TextBox>
-              <asp:Button ID="Button1" runat="server" Text="Buscar" lass="nav-link" OnClick="Button1_Click"/> 
-
             </div>
+              <div class="md-form my-2">
+              <asp:Button ID="Button1" runat="server" Text="Buscar" class="btn btn-primary btn-deep-orange " OnClick="Button1_Click"/> 
+</div>
+            
           </form>
         </div>
         <!-- Collapsible content -->
@@ -91,7 +93,7 @@
 
       <!--Pagination-->
       <nav class="d-flex justify-content-center wow fadeIn">
-        <ul class="pagination pg-blue">
+        <ul class="pagination pg-amber">
 
           <!--Arrow left-->
           <li class="page-item disabled">

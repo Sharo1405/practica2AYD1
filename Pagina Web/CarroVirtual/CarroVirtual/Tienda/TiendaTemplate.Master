@@ -64,12 +64,12 @@
 
 <form id="form1" runat="server">
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark special-color-dark white scrolling-navbar">
     <div class="container">
 
       <!-- Brand -->
       <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
-        <strong class="blue-text">MDB</strong>
+         <strong class="lime-text">GMZ</strong>
       </a>
 
       <!-- Collapse -->
@@ -244,7 +244,7 @@
    
 
   <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+  <footer class="page-footer text-center font-small special-color-dark mt-4 wow fadeIn">
 
     <hr class="my-4">
 
