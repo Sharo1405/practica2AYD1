@@ -231,6 +231,7 @@
     </Compile>
     <Compile Include="Gestion_categoria_crud.cs" />
     <Compile Include="ContrProductos.cs" />
+    <Compile Include="Gestion_Login.cs" />
     <Compile Include="indexAdmin.aspx.cs">
       <DependentUpon>indexAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
