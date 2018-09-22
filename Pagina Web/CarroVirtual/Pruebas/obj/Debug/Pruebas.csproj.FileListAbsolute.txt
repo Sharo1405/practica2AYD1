@@ -1,0 +1,17 @@
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Pruebas.dll
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Pruebas.pdb
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\CarroVirtual.dll
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\CarroVirtual.pdb
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\CarroVirtual.dll.config
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csprojAssemblyReference.cache
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csproj.CoreCompileInputs.cache
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csproj.CopyComplete
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.dll
+C:\Users\sharolin\Documents\AYDPractica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.pdb
