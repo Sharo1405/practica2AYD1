@@ -3,6 +3,6 @@
     <h1 runat="server" id="txt_titulo">Bienvenido Administrador (AD-Market)</h1>
     <p runat="server" id="txt_subtitulo" class="subtitle">Small business with big dreams</p>
     <div class="home_btn">
-        <a href="Login_Admin.aspx" class="btn btn-md">Cerrar Sesion</a>
+        &nbsp;<asp:Button class="btn btn-md" ID="Button1" runat="server" Height="55px" Text="Cerrar Sesion" Width="156px" OnClick="Button1_Click" />
     </div>
 </asp:Content>

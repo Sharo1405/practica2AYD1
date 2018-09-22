@@ -18,8 +18,10 @@ namespace CarroVirtual
         {
             String nombre = Username.Text;
             String contrasenia = Password.Text;
-            if (nombre.ToLower().Equals("administrador") && contrasenia.ToLower().Equals("1234"))
+            int ingre = Gestion_Login.Ingreso(nombre, contrasenia);
+            if (ingre == 1)
             {
+                Conexion.inicioSesion = true;
                 Response.Redirect("indexAdmin.aspx");
             }
             else

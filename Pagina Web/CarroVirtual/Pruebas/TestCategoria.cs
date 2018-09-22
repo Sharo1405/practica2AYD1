@@ -192,7 +192,7 @@ namespace Pruebas
             {
 
             }
-            Gestion_categoria_crud.Eliminar_categoria(categoria.nombre);
+            Gestion_categoria_crud.Eliminar_categoria(prueba.nombre);
         }
     }
 }

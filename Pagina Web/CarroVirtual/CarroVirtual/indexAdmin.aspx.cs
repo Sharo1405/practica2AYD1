@@ -13,5 +13,11 @@ namespace CarroVirtual
         {
             txt_subtitulo.InnerText = "Fecha: " + DateTime.Today.ToString("d");
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Conexion.inicioSesion = false;
+            Response.Redirect("Login_Admin.aspx");
+        }
     }
 }
