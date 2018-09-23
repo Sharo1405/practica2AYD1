@@ -88,5 +88,31 @@ namespace CarroVirtual.Tienda
 
             buscarProductos(busquedaNombre, categoria, 0);
         }
+
+
+        //ELIMINAR SI NO SIRVE
+        private void ShowMessage(string Message, string Title)
+        {
+            ScriptManager.RegisterStartupScript(Page, this.GetType(), "alert", string.Format("alert('{1}', '{0}');", Message, Title), true);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            //Console.WriteLine("Holabb");
+            //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Record Inserted Successfully')", true);
+            //ShowMessage("Ayuda", "Ayuda");
+            Button clickedButton = (Button)sender;
+            clickedButton.Text = "...button clicked...";
+            clickedButton.Enabled = false;
+
+            // Display the greeting label text.
+
+            //Label1.Text = "Hola";
+            /*busquedaNombre = searchText.Text;
+            if (busquedaNombre != null && busquedaNombre.Trim().Length <= 0)
+                busquedaNombre = null;
+            buscarProductos(busquedaNombre, categoria, 0);*/
+        }        
+        //HASTA ACÁ ELIMINAR
     }
 }

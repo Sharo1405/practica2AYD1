@@ -69,6 +69,7 @@
     <Content Include="BaseAdmin.Master" />
     <Content Include="BaseAdmin2.Master" />
     <None Include="packages.config" />
+    <Content Include="Tienda\CardCarrito.ascx" />
     <Content Include="Tienda\css\addons\datatables.css" />
     <Content Include="Tienda\css\addons\datatables.min.css" />
     <Content Include="Tienda\css\bootstrap.css" />
@@ -103,6 +104,7 @@
     <Content Include="Tienda\js\mdb.js" />
     <Content Include="Tienda\js\mdb.min.js" />
     <Content Include="Tienda\js\popper.min.js" />
+    <Content Include="Tienda\ListadoCarrito.aspx" />
     <Content Include="Tienda\ListadoProductos.aspx" />
     <Content Include="Tienda\TiendaTemplate.Master" />
     <Content Include="Tienda\font\roboto\Roboto-Bold.eot" />
@@ -254,7 +256,21 @@
     <Compile Include="registrarProducto.aspx.designer.cs">
       <DependentUpon>registrarProducto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Tienda\CardCarrito.ascx.cs">
+      <DependentUpon>CardCarrito.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tienda\CardCarrito.ascx.designer.cs">
+      <DependentUpon>CardCarrito.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Tienda\ContrMostrarProductos.cs" />
+    <Compile Include="Tienda\ListadoCarrito.aspx.cs">
+      <DependentUpon>ListadoCarrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tienda\ListadoCarrito.aspx.designer.cs">
+      <DependentUpon>ListadoCarrito.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tienda\ListadoProductos.aspx.cs">
       <DependentUpon>ListadoProductos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

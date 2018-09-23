@@ -1,13 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Tienda/TiendaTemplate.Master" AutoEventWireup="true" CodeBehind="ListadoProductos.aspx.cs" Inherits="CarroVirtual.Tienda.Productos" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Tienda/TiendaTemplate.Master" AutoEventWireup="true" CodeBehind="ListadoProductos.aspx.cs" EnableEventValidation="false" Inherits="CarroVirtual.Tienda.Productos" %>
 
 <%@ Register Src="~/Tienda/CardProducto.ascx" TagPrefix="uc1" TagName="CardProducto" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  <!--Main layout-->
+    <!--Main layout-->
   <main>
     <div class="container">
 
@@ -54,10 +53,10 @@
           <form class="form-inline">
             <div class="md-form my-2">
               <!--input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"-->
-              <asp:TextBox class="form-control mr-sm-2" ID="searchText" runat="server" ></asp:TextBox>
+              <asp:TextBox class="form-control mr-sm-2" ID="searchText" runat="server" ></asp:TextBox>              
             </div>
               <div class="md-form my-2">
-              <asp:Button ID="Button1" runat="server" Text="Buscar" class="btn btn-primary btn-deep-orange " OnClick="Button1_Click"/> 
+              <asp:Button ID="Button1" runat="server" Text="Buscar" class="btn btn-primary btn-deep-orange " OnClick="Button1_Click"/>               
 </div>
             
           </form>
@@ -77,7 +76,8 @@
                   <ItemTemplate>
 
                       <uc1:CardProducto runat="server" id="CardProducto" ProductoCarrito="<%# Container.DataItem %>"/>
-
+              <!--        <asp:TextBox class="form-control mr-sm-2" ID="Label1" runat="server"  />
+              <asp:Button ID="Button2" runat="server" Text="Agregar al carrito" class="btn btn-primary btn-deep-orange " OnClick="Button2_Click"/> -->
                   </ItemTemplate>
 
               </asp:ListView>
@@ -88,7 +88,7 @@
             <!--Grid row-->
         
 
-      </section>
+      </section>        
       <!--Section: Products v.3-->
 
       <!--Pagination-->
@@ -133,6 +133,4 @@
 
     </div>
   </main>
-  <!--Main layout-->
-
 </asp:Content>

@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CardProducto.ascx.cs" Inherits="CarroVirtual.Tienda.CardProducto" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CardCarrito.ascx.cs" Inherits="CarroVirtual.Tienda.CardProducto" %>
 
 <!--Grid column-->
 <div class="col-lg-3 col-md-6 mb-4">
@@ -17,14 +17,14 @@
         <!--Card content-->
         <div class="card-body text-center">
             <!--Category & Title-->
-            <a href="" class="grey-text">
+            <a class="grey-text">
                 <h5>
                     <%= ProductoCarrito.nombre %>
                 </h5>
             </a>
             <h5>
                 <strong>
-                    <a href="" class="dark-grey-text">                        
+                    <a class="dark-grey-text">                        
                           <!--span class="badge badge-pill danger-color">NEW</!--span-->
                         <%= ProductoCarrito.categoria %>
                     </a>
@@ -33,8 +33,7 @@
             <h4 class="font-weight-bold blue-grey-text">
                 <strong>
                     $
-                    <%= ProductoCarrito.precio %>
-                    <!-- <button class="btn btn-default" OnClick="Button1_Click">Agregar</button> -->
+                    <%= ProductoCarrito.precio %>                    
                 </strong>
             </h4>                                             
 
