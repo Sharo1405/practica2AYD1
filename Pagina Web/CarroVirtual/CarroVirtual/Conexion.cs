@@ -10,7 +10,11 @@ namespace CarroVirtual
     public class Conexion
 
     {
+<<<<<<< HEAD
         public static String cadenaConexion = "Data Source=ING\\SQLEXPRESS;Initial Catalog=p2;Integrated Security=True";
+=======
+        public static String cadenaConexion = "Data Source=DESKTOP-HLC93MN\\SQLEXPRESS;Initial Catalog=p2;Integrated Security=True";
+>>>>>>> 3efdd9dcedcb79f4f29937893bae950cea1fb200
 
         public static Boolean inicioSesion = false;
 
