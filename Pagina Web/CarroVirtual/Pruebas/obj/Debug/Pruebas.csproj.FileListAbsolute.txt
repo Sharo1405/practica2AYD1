@@ -37,6 +37,7 @@ C:\Users\Rod\Documents\USAC\8voSemestre\AYD1\Lab\Practicas\Practica2\practica2AY
 C:\Users\Rod\Documents\USAC\8voSemestre\AYD1\Lab\Practicas\Practica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csprojResolveAssemblyReference.cache
 C:\Users\Rod\Documents\USAC\8voSemestre\AYD1\Lab\Practicas\Practica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.dll
 C:\Users\Rod\Documents\USAC\8voSemestre\AYD1\Lab\Practicas\Practica2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.pdb
+<<<<<<< HEAD
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -57,3 +58,25 @@ C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\Pruebas\ob
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csproj.CopyComplete
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.dll
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.pdb
+=======
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Pruebas.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Pruebas.pdb
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\CarroVirtual.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\CarroVirtual.pdb
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\CarroVirtual.dll.config
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csprojResolveAssemblyReference.cache
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csproj.CoreCompileInputs.cache
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.csproj.CopyComplete
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.dll
+C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\Pruebas\obj\Debug\Pruebas.pdb
+>>>>>>> 73dc00c205a5ceaaa3873c0bb5e9dac3b7ada209

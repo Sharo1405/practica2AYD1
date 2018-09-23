@@ -10,16 +10,17 @@ namespace CarroVirtual
     public class ContrProductos
     {
         //<======================== METODOS PRODUCTO =========================================================
-        internal static void CrearProducto(Producto producto, Categoria categoria)
+        public static bool CrearProducto(Producto producto, Categoria categoria)
         {
             SqlConnection con = Conexion.ObtenerConexion();
             SqlCommand cmd = new SqlCommand("INSERT INTO producto(nombre, cantidad, detalles, precio_venta, imagen, categoria_cod_categoria) VALUES('" + producto.nombre + "', " + producto.cantidad + ", '" + producto.detalles + "', " + producto.precio_venta + ", @IMAGEN, " + categoria.cod_categoria + ")", con);
             cmd.Parameters.Add("@IMAGEN", System.Data.SqlDbType.VarBinary).Value = producto.imagen;
             int s = cmd.ExecuteNonQuery();
             con.Close();
+            return true;
         }
 
-        internal static Producto BuscarProducto(string busqueda) //busqueda por nombre o código
+        public static Producto BuscarProducto(string busqueda) //busqueda por nombre o código
         {
             int cod_producto = 0;
             try { cod_producto = Convert.ToInt32(busqueda); }
@@ -45,24 +46,26 @@ namespace CarroVirtual
             return producto;
         }
 
-        internal static void EliminarProducto(int cod_producto)
+        public static Boolean EliminarProducto(int cod_producto)
         {
             SqlConnection con = Conexion.ObtenerConexion();
             SqlCommand cmd = new SqlCommand("DELETE producto WHERE cod_producto = " + cod_producto + "", con);
             int s = cmd.ExecuteNonQuery();
             con.Close();
+            return true;
         }
 
-        internal static void EditarProducto(Producto producto)
+        public static Boolean EditarProducto(Producto producto)
         {
             SqlConnection con = Conexion.ObtenerConexion();
             SqlCommand cmd = new SqlCommand("UPDATE producto SET nombre = '" + producto.nombre + "', cantidad = " + producto.cantidad + ", precio_venta = " + producto.precio_venta + ", detalles = '" + producto.detalles + "', categoria_cod_categoria = " + producto.categoria_cod_categoria + ", imagen = @IMAGEN WHERE cod_producto = " + producto.cod_producto + "", con);
             cmd.Parameters.Add("@IMAGEN", System.Data.SqlDbType.VarBinary).Value = producto.imagen;
             int s = cmd.ExecuteNonQuery();
             con.Close();
+            return true;
         }
 
-        internal static bool ExisteProducto(Producto producto, Categoria categoria)
+        public static bool ExisteProducto(Producto producto, Categoria categoria)
         {
             SqlConnection con = Conexion.ObtenerConexion();
             SqlCommand cmd = new SqlCommand("SELECT cod_producto FROM producto WHERE nombre LIKE '" + producto.nombre + "' AND categoria_cod_categoria = " + categoria.cod_categoria + "", con);
@@ -77,7 +80,7 @@ namespace CarroVirtual
             return false;
         }
 
-        internal static byte[] ObtenerImagenProducto(int cod_producto)
+        public static byte[] ObtenerImagenProducto(int cod_producto)
         {
             SqlConnection con = Conexion.ObtenerConexion();
             SqlCommand cmd = new SqlCommand("SELECT imagen FROM producto WHERE cod_producto=" + cod_producto + ";", con);

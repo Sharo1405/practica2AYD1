@@ -51,6 +51,3 @@ create table carro(
 ALTER TABLE carro
     ADD CONSTRAINT carro_producto_fk FOREIGN KEY ( producto_cod_producto )
     REFERENCES producto ( cod_producto ) ON DELETE CASCADE;
-
-insert into carro(producto_cod_producto) VALUES
-(1),(2),(3);
