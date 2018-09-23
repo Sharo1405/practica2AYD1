@@ -7,63 +7,54 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CarroVirtual.Tienda {
+namespace CarroVirtual {
     
     
-    public partial class Productos {
+    public partial class CompletarCompra {
         
         /// <summary>
-        /// Control lista_cat.
+        /// Control txt_nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lista_cat;
+        protected global::System.Web.UI.WebControls.TextBox txt_nombre;
         
         /// <summary>
-        /// Control li_todos.
+        /// Control txt_apellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl li_todos;
+        protected global::System.Web.UI.WebControls.TextBox txt_apellido;
         
         /// <summary>
-        /// Control LinkButtonAll.
+        /// Control txt_dpi.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButtonAll;
+        protected global::System.Web.UI.WebControls.TextBox txt_dpi;
         
         /// <summary>
-        /// Control searchText.
+        /// Control txt_direccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox searchText;
+        protected global::System.Web.UI.WebControls.TextBox txt_direccion;
         
         /// <summary>
-        /// Control Button1.
+        /// Control btn_registrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-        
-        /// <summary>
-        /// Control ListViewCardProducts.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView ListViewCardProducts;
+        protected global::System.Web.UI.WebControls.Button btn_registrar;
     }
 }

@@ -181,7 +181,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CompletarCompra.aspx" />
+    <Content Include="Tienda\CompletarCompra.aspx" />
     <Content Include="Crear_categoria.aspx" />
     <Content Include="editarProducto.aspx" />
     <Content Include="Editar_categoria.aspx" />
@@ -209,11 +209,11 @@
       <DependentUpon>BaseAdmin2.Master</DependentUpon>
     </Compile>
     <Compile Include="Clases.cs" />
-    <Compile Include="CompletarCompra.aspx.cs">
+    <Compile Include="Tienda\CompletarCompra.aspx.cs">
       <DependentUpon>CompletarCompra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CompletarCompra.aspx.designer.cs">
+    <Compile Include="Tienda\CompletarCompra.aspx.designer.cs">
       <DependentUpon>CompletarCompra.aspx</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />

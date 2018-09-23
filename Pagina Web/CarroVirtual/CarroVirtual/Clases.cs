@@ -32,13 +32,12 @@ namespace CarroVirtual
     }
     public class Factura
     {
-        private string nombre, apellido, zona, dpi;
-        private DateTime fecha;
+        private string nombre, apellido, zona, dpi,fecha;
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
         public string Zona { get => zona; set => zona = value; }
         public string Dpi { get => dpi; set => dpi = value; }
-        public DateTime Fecha { get => fecha; set => fecha = value; }
+        public string Fecha { get => fecha; set => fecha = value; }
     }
     public class Categoria
     {

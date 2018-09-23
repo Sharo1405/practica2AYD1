@@ -9,6 +9,22 @@ namespace CarroVirtual
 {
     public class Gestion_categoria_crud
     {
+        public static List<Categoria> ObtenerCategorias()
+        {
+            List<Categoria> categorias = new List<Categoria>();
+            SqlConnection con = Conexion.ObtenerConexion();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM categoria", con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Categoria categoria = new Categoria();
+                categoria.cod_categoria = (Int32)reader["cod_categoria"];
+                categoria.nombre = (String)reader["nombre"];
+                categorias.Add(categoria);
+            }
+            con.Close();
+            return categorias;
+        }
 
         public static bool CrearCategoria(Categoria categoria)
         {

@@ -26,27 +26,11 @@
         <div class="collapse navbar-collapse" id="basicExampleNav">
 
           <!-- Links -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <asp:LinkButton ID="LinkButtonAll" runat="server" class="nav-link" OnClick="LinkButtonAll_Click" >ALL</asp:LinkButton>
+          <ul class="navbar-nav mr-auto" id="lista_cat" runat="server">
+            <li class="nav-item active" runat="server" id="li_todos">
+              <asp:LinkButton ID="LinkButtonAll" runat="server" class="nav-link" OnClick="LinkButtonAll_Click">ALL</asp:LinkButton>
                 <span class="sr-only">(current)</span>
-              </a>
             </li>
-            <li class="nav-item">
-                
-             <asp:LinkButton ID="LinkButtonPS" runat="server" class="nav-link" OnClick="LinkButtonPS_Click" >PS</asp:LinkButton>
-
-            </li>
-            <li class="nav-item">
-              <asp:LinkButton ID="LinkButtonNINTENDO" runat="server" class="nav-link" OnClick="LinkButtonNINTENDO_Click" >NINTENDO</asp:LinkButton>
-            </li>
-            <li class="nav-item">
-              <asp:LinkButton ID="LinkButtonPC" runat="server" class="nav-link" OnClick="LinkButtonPC_Click" >PC</asp:LinkButton>
-            </li>
-              <li class="nav-item">
-              <asp:LinkButton ID="LinkButtonXBOX" runat="server" class="nav-link" OnClick="LinkButtonXBOX_Click"  >XBOX</asp:LinkButton>
-            </li>
-
           </ul>
           <!-- Links -->
 
