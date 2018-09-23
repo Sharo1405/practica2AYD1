@@ -10,13 +10,14 @@ namespace CarroVirtual
     public class ContrProductos
     {
         //<======================== METODOS PRODUCTO =========================================================
-        internal static void CrearProducto(Producto producto, Categoria categoria)
+        public static bool CrearProducto(Producto producto, Categoria categoria)
         {
             SqlConnection con = Conexion.ObtenerConexion();
             SqlCommand cmd = new SqlCommand("INSERT INTO producto(nombre, cantidad, detalles, precio_venta, imagen, categoria_cod_categoria) VALUES('" + producto.nombre + "', " + producto.cantidad + ", '" + producto.detalles + "', " + producto.precio_venta + ", @IMAGEN, " + categoria.cod_categoria + ")", con);
             cmd.Parameters.Add("@IMAGEN", System.Data.SqlDbType.VarBinary).Value = producto.imagen;
             int s = cmd.ExecuteNonQuery();
             con.Close();
+            return true;
         }
 
         public static Producto BuscarProducto(string busqueda) //busqueda por nombre o código

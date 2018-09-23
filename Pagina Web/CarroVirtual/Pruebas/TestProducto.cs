@@ -45,6 +45,29 @@ namespace Pruebas
             Assert.AreEqual(54, productoEncontrado.cantidad);
         }
 
+        /*
+        Nombre: Insertar Producto
+        Detalles: insertar un producto enviando como parámetro un objeto "producto"
+         */
+        [TestMethod]
+        public void InsertarProducto()
+        {
+            //Arrange
+            Categoria catProducto = new Categoria();
+            catProducto.cod_categoria = 1;
+            Producto nuevoProducto = new Producto();
+            nuevoProducto.nombre = "Super smash bros 5";
+            nuevoProducto.precio_venta = 300;
+            nuevoProducto.cantidad = 50;
+            nuevoProducto.categoria_cod_categoria = 1;
+            nuevoProducto.detalles = "super smash wii u";
+            Boolean resultado = false;
 
+            //Act
+            resultado=ContrProductos.CrearProducto(nuevoProducto,catProducto);
+
+            //Assert
+            Assert.AreEqual(true, resultado);
+        }
     }
 }
