@@ -11,7 +11,10 @@ namespace CarroVirtual
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Conexion.inicioSesion)
+            {
+                Response.Redirect("Login_Admin.aspx");
+            }
         }
 
         protected void lbl_registrarProducto_Click(object sender, EventArgs e)

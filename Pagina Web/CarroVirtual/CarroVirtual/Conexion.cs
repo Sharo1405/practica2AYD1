@@ -16,12 +16,9 @@ namespace CarroVirtual
         //<======================= CONEXION A LA BASE DE DATOS ===========================================
         public static SqlConnection ObtenerConexion()
         {
-            //if (inicioSesion) {
-                SqlConnection con = new SqlConnection(cadenaConexion);
-                con.Open();
-                return con;
-            //}
-            //return null;
+            SqlConnection con = new SqlConnection(cadenaConexion);
+            con.Open();
+            return con;
         }
 
         //<======================= MENSAJES EMERGENTES ===================================================
