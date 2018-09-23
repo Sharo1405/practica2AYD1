@@ -40,4 +40,9 @@ create table detalle_factura(
 
 ALTER TABLE producto
     ADD CONSTRAINT producto_categoria_fk FOREIGN KEY ( categoria_cod_categoria )
+<<<<<<< HEAD
         REFERENCES categoria ( cod_categoria ) ON DELETE CASCADE;
+=======
+
+        REFERENCES categoria ( cod_categoria ) ON DELETE CASCADE;
+>>>>>>> c11c0c0370abc1765d3a1dac0b43b31dc35d5dc9

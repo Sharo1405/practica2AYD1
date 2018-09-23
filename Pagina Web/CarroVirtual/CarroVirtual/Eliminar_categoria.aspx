@@ -6,10 +6,13 @@
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere un nombre">
 						<span class="label-input100">Nombre de la Categoria</span>
-						<asp:TextBox class="input100" runat="server" id="txt_nombre"></asp:TextBox>
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="33px" Width="409px">
+                    </asp:DropDownList>
+                    <br>
+                    <br>
                     <br>
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">

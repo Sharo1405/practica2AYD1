@@ -52,4 +52,32 @@ namespace CarroVirtual
             this.descripcion = "";
         }
     }
+
+    public class ProductoCarrito
+    {
+        public string nombre { get; set; }
+        public string detalles { get; set; }
+        public int precio { get; set; }
+        public string imagenURL { get; set; }
+        public string categoria { get; set; }
+
+        public int cantidadDisponible { get; set; }
+        public int cantidadPedida { get; set; }
+
+        public int subtotal { get; set; }
+
+        public ProductoCarrito()
+        {
+            this.nombre = "";
+            this.detalles = "";
+            this.precio = 0;
+            this.cantidadDisponible = 0;
+            this.cantidadPedida = 0;
+            this.subtotal = 0;
+            this.imagenURL = "";
+            this.categoria = "";
+        }
+    }
+
+
 }
