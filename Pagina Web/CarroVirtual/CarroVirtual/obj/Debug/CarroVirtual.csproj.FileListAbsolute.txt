@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> 3efdd9dcedcb79f4f29937893bae950cea1fb200
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.dll.config
@@ -71,8 +70,6 @@ C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\CarroVirtu
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.dll
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.pdb
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.csprojAssemblyReference.cache
-<<<<<<< HEAD
-=======
 C:\Users\Koka\Downloads\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.dll.config
 C:\Users\Koka\Downloads\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.dll
 C:\Users\Koka\Downloads\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.pdb
@@ -305,7 +302,6 @@ C:\Users\juan\Documents\GitHub\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtua
 C:\Users\juan\Documents\GitHub\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.csproj.CopyComplete
 C:\Users\juan\Documents\GitHub\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.dll
 C:\Users\juan\Documents\GitHub\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.pdb
-=======
 C:\Users\Leonel Flores\Documents\GitHub\REPO2\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.dll.config
 C:\Users\Leonel Flores\Documents\GitHub\REPO2\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.dll
 C:\Users\Leonel Flores\Documents\GitHub\REPO2\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.pdb
@@ -443,5 +439,3 @@ C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\es\System.Web.Http.resources.dll
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\es\System.Web.Http.WebHost.resources.dll
 >>>>>>> 73dc00c205a5ceaaa3873c0bb5e9dac3b7ada209
-=======
->>>>>>> 3efdd9dcedcb79f4f29937893bae950cea1fb200

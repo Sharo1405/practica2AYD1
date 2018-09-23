@@ -10,31 +10,12 @@ namespace CarroVirtual
     public partial class CompletarCompra : System.Web.UI.Page
     {
         List<ProductoCarrito> productos=null;
-<<<<<<< HEAD
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btn_registrar_Click(object sender, EventArgs e)
-        {
-            Factura factura = new Factura();
-            factura.Nombre = txt_nombre.Text;
-            factura.Apellido = txt_apellido.Text;
-            factura.Dpi = txt_dpi.Text;
-            factura.Zona = txt_direccion.Text;
-            factura.Fecha = DateTime.Now.Date.ToString();
-            if(Facturacion.RealizarCompra(factura, productos)>0)
-            {
-                Conexion.MsgBox("Compra realizada con exito!", this.Page, this);
-            }
-            txt_apellido.Text = "";
-            txt_nombre.Text = "";
-            txt_dpi.Text = "";
-            txt_direccion.Text = "";
-            txt_nombre.Focus();
-=======
- 
         protected void btn_registrar_Click(object sender, EventArgs e)
         {
             if (txt_nombre.Text != "" && txt_apellido.Text != "" && txt_direccion.Text != "" && txt_dpi.Text != "")
@@ -65,8 +46,6 @@ namespace CarroVirtual
                 Conexion.MsgBox("Debe llenar todos los campos solicitados!", this.Page, this);
                 txt_nombre.Focus();
             }
-            
->>>>>>> 3efdd9dcedcb79f4f29937893bae950cea1fb200
         }
     }
 }
