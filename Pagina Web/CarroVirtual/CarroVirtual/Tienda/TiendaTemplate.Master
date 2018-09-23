@@ -24,7 +24,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Material Design Bootstrap</title>
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="#">
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
@@ -68,7 +68,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+      <a class="navbar-brand waves-effect" href="#" target="_blank">
          <strong class="lime-text">GMZ</strong>
       </a>
 
@@ -84,15 +84,15 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link waves-effect" href="#">Tienda
+            <a class="nav-link waves-effect" href="ListadoProductos.aspx">Tienda
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Mi Compra</a>
+            <a class="nav-link waves-effect" href="#">Mi Compra</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/getting-started/" target="_blank">Conocenos</a>
+            <a class="nav-link waves-effect" href="/Login_Admin.aspx" target="_blank">Login</a>
           </li>
         </ul>
 
@@ -137,16 +137,15 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>JUEGA</strong>
+                <strong>JUEGA DESDE LA COMODIDAD DE TU CASA</strong>
               </h1>
 
               <p>
-                <strong>Best & free guide of responsive web design</strong>
+                <strong>Ordena los juegos que mas te gusten directamente a la puerta de tu casa</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>Soporte con diferentes tipos de pago.</strong>
               </p>
             </div>
             <!-- Content -->
@@ -168,16 +167,15 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>JUEGA</strong>
+                <strong>JUEGA EN CUALQUIER PLATAFORMA</strong>
               </h1>
 
               <p>
-                <strong>Best & free guide of responsive web design</strong>
+                <strong>Diferentes plataformas, diferentes experiencias de juego</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>Visita las categorias para una mejor seleccion de tus gustos.</strong>
               </p>
             </div>
             <!-- Content -->
@@ -199,16 +197,15 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>JUEGA</strong>
+                <strong>JUEGA LO QUE MAS TE GUSTA</strong>
               </h1>
 
               <p>
-                <strong>Best & free guide of responsive web design</strong>
+                <strong>Aqui encontraras todos los juegos que mas te gustan.</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                  available. Create your own, stunning website.</strong>
+                <strong>Nuevos estrenos agregados.</strong>
               </p>
             </div>
             <!-- Content -->
@@ -250,35 +247,35 @@
 
     <!-- Social icons -->
     <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+      <a>
         <i class="fa fa-facebook mr-3"></i>
       </a>
 
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
+      <a>
         <i class="fa fa-twitter mr-3"></i>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+      <a>
         <i class="fa fa-youtube mr-3"></i>
       </a>
 
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+      <a>
         <i class="fa fa-google-plus mr-3"></i>
       </a>
 
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
+      <a>
         <i class="fa fa-dribbble mr-3"></i>
       </a>
 
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
+      <a>
         <i class="fa fa-pinterest mr-3"></i>
       </a>
 
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+      <a>
         <i class="fa fa-github mr-3"></i>
       </a>
 
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
+      <a>
         <i class="fa fa-codepen mr-3"></i>
       </a>
     </div>
