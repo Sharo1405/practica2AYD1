@@ -8,7 +8,7 @@ namespace CarroVirtual
 {
     public class Facturacion
     {
-       internal static int RealizarCompra(Factura factura, List<Producto> productos)
+       internal static int RealizarCompra(Factura factura, List<ProductoCarrito> productos)
         {
             SqlConnection con = Conexion.ObtenerConexion();
             SqlCommand cmd = new SqlCommand("INSERT INTO Factura(Nombre,Apellido,DPI,zona_entrega,fecha) VALUES('" + factura.Nombre + "', " + factura.Apellido + ", '" + factura.Dpi + "', '" + factura.Zona + "','" + factura.Fecha + "')", con);
@@ -27,9 +27,9 @@ namespace CarroVirtual
             con = Conexion.ObtenerConexion();
             if (codigo > 0)
             {
-                foreach (Producto prod in productos)
+                foreach (ProductoCarrito prod in productos)
                 {
-                    cmd = new SqlCommand("INSERT INTO detalle_factura (detalle_cod_factura, producto_cod_producto) VALUES(" + codigo + "," + prod.cod_producto + ")");
+                    cmd = new SqlCommand("INSERT INTO detalle_factura (detalle_cod_factura, producto_cod_producto) VALUES(" + codigo + "," + prod.codigo + ")");
                     s = cmd.ExecuteNonQuery();
                 }
             }

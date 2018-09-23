@@ -55,6 +55,7 @@ namespace CarroVirtual
 
     public class ProductoCarrito
     {
+        public int codigo { get; set; }
         public string nombre { get; set; }
         public string detalles { get; set; }
         public int precio { get; set; }
