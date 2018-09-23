@@ -16,6 +16,11 @@ namespace CarroVirtual
 
         }
 
+        protected void btn2_regresar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Tienda/ListadoCarrito.aspx");
+        }
+
         protected void btn_registrar_Click(object sender, EventArgs e)
         {
             if (txt_nombre.Text != "" && txt_apellido.Text != "" && txt_direccion.Text != "" && txt_dpi.Text != "")

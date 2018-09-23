@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Tienda/TiendaTemplate.Master" AutoEventWireup="true" CodeBehind="CompletarCompra.aspx.cs" Inherits="CarroVirtual.CompletarCompra" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/BaseCompra.Master" AutoEventWireup="true" CodeBehind="CompletarCompra.aspx.cs" Inherits="CarroVirtual.CompletarCompra" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 					<span class="login100-form-title p-b-49">Confirmar Compra</span>
@@ -34,12 +34,12 @@
 							<asp:Button id="btn_registrar" OnClick="btn_registrar_Click" runat="server" class="login100-form-btn" Text="COMPRAR"></asp:Button>
 						</div>
 					</div>
-                    
+                   
                     <br>
                     <div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<a runat="server" href="indexAdmin.aspx" class="login100-form-btn">Regresar/Cancelar</a>
+							<asp:Button id="Button2" OnClick="btn2_regresar_Click" runat="server" class="login100-form-btn" Text="Regresar/Canselar"></asp:Button>
 						</div>
 					</div>
         </div>
