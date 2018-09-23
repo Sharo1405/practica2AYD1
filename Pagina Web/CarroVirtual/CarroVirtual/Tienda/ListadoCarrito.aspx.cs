@@ -11,7 +11,7 @@ namespace CarroVirtual.Tienda
     {        
         protected void Page_Load(object sender, EventArgs e)
         {
-            buscarProductos();
+            //buscarProductos();
         }
 
         protected void buscarProductos()
@@ -26,9 +26,9 @@ namespace CarroVirtual.Tienda
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            List<ProductoCarrito> listaProductos = ContrMostrarProductos.BuscarProductCar();
-            Facturacion.productos = listaProductos;
-            Response.Redirect("CompletarCompra.aspx");
+            //List<ProductoCarrito> listaProductos = ContrMostrarProductos.BuscarProductCar();
+            //Facturacion.productos = listaProductos;
+            Response.Redirect("../CompletarCompra.aspx");
         }
     }
 }

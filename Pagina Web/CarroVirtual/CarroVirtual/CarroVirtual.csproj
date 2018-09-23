@@ -81,6 +81,7 @@
   <ItemGroup>
     <Content Include="BaseAdmin.Master" />
     <Content Include="BaseAdmin2.Master" />
+    <Content Include="BaseCompra.master" />
     <None Include="packages.config" />
     <Content Include="Tienda\CardCarrito.ascx" />
     <Content Include="Tienda\css\addons\datatables.css" />
@@ -181,7 +182,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Tienda\CompletarCompra.aspx" />
+    <Content Include="CompletarCompra.aspx" />
     <Content Include="Crear_categoria.aspx" />
     <Content Include="editarProducto.aspx" />
     <Content Include="Editar_categoria.aspx" />
@@ -208,12 +209,19 @@
     <Compile Include="BaseAdmin2.Master.designer.cs">
       <DependentUpon>BaseAdmin2.Master</DependentUpon>
     </Compile>
+    <Compile Include="BaseCompra.master.cs">
+      <DependentUpon>BaseCompra.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseCompra.master.designer.cs">
+      <DependentUpon>BaseCompra.master</DependentUpon>
+    </Compile>
     <Compile Include="Clases.cs" />
-    <Compile Include="Tienda\CompletarCompra.aspx.cs">
+    <Compile Include="CompletarCompra.aspx.cs">
       <DependentUpon>CompletarCompra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Tienda\CompletarCompra.aspx.designer.cs">
+    <Compile Include="CompletarCompra.aspx.designer.cs">
       <DependentUpon>CompletarCompra.aspx</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
