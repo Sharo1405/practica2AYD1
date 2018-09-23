@@ -54,6 +54,7 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestProducto.cs" />
+    <Compile Include="TestCompletarCompra.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

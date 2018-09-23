@@ -9,7 +9,7 @@ namespace CarroVirtual
 {
     public partial class CompletarCompra : System.Web.UI.Page
     {
-        List<ProductoCarrito> productos;
+        List<ProductoCarrito> productos=null;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -22,7 +22,7 @@ namespace CarroVirtual
             factura.Apellido = txt_apellido.Text;
             factura.Dpi = txt_dpi.Text;
             factura.Zona = txt_direccion.Text;
-            factura.Fecha = DateTime.Now.Date;
+            factura.Fecha = DateTime.Now.Date.ToString();
             if(Facturacion.RealizarCompra(factura, productos)>0)
             {
                 Conexion.MsgBox("Compra realizada con exito!", this.Page, this);

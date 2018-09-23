@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/BaseAdmin2.Master" AutoEventWireup="true" CodeBehind="CompletarCompra.aspx.cs" Inherits="CarroVirtual.CompletarCompra" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Tienda/TiendaTemplate.Master" AutoEventWireup="true" CodeBehind="CompletarCompra.aspx.cs" Inherits="CarroVirtual.CompletarCompra" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 					<span class="login100-form-title p-b-49">Confirmar Compra</span>

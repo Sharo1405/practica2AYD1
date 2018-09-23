@@ -27,8 +27,8 @@ namespace CarroVirtual.Tienda
         protected void Button2_Click(object sender, EventArgs e)
         {
             List<ProductoCarrito> listaProductos = ContrMostrarProductos.BuscarProductCar();
-            Factura fact = null;
-            Facturacion.RealizarCompra(fact,listaProductos);
+            Facturacion.productos = listaProductos;
+            Response.Redirect("CompletarCompra.aspx");
         }
     }
 }

@@ -8,35 +8,46 @@ namespace CarroVirtual
 {
     public class Facturacion
     {
-       internal static int RealizarCompra(Factura factura, List<ProductoCarrito> productos)
+        public static List<ProductoCarrito> productos;
+
+        public static int RealizarCompra(Factura factura, List<ProductoCarrito> productos)
         {
-            SqlConnection con = Conexion.ObtenerConexion();
-            SqlCommand cmd = new SqlCommand("INSERT INTO Factura(Nombre,Apellido,DPI,zona_entrega,fecha) VALUES('" + factura.Nombre + "', " + factura.Apellido + ", '" + factura.Dpi + "', '" + factura.Zona + "','" + factura.Fecha + "')", con);
-            int s = cmd.ExecuteNonQuery();
-            con.Close();
-            con = Conexion.ObtenerConexion();
-            cmd = new SqlCommand("SELECT cod_factura FROM factura where Nombre='" + factura.Nombre + "' and Apellido='" + factura.Apellido + "' and DPI='" + factura.Dpi + "' and zona_entrega='" + factura.Zona + "' and fecha ='" + factura.Fecha + "'", con);
-            SqlDataReader reader = cmd.ExecuteReader();
-            int codigo=-1;
-            while (reader.Read())
+            int s = 0;
+            if (productos.Count > 0 && factura.Nombre!="" && factura.Apellido!="" && factura.Dpi!="" &&factura.Zona!="")
             {
-                codigo = (int)reader["cod_factura"];
-            }
-            con.Close();
+                SqlConnection con = Conexion.ObtenerConexion();
+                SqlCommand cmd = new SqlCommand("INSERT INTO Factura(Nombre,Apellido,DPI,zona_entrega,fecha) VALUES('" + factura.Nombre + "', '" + factura.Apellido + "', '" + factura.Dpi + "', '" + factura.Zona + "','" + factura.Fecha + "')", con);
+                s = cmd.ExecuteNonQuery();
+                con.Close();
 
-            con = Conexion.ObtenerConexion();
-            if (codigo > 0)
-            {
-                foreach (ProductoCarrito prod in productos)
+                con = Conexion.ObtenerConexion();
+                cmd = new SqlCommand("SELECT cod_factura FROM factura where Nombre='" + factura.Nombre + "' and Apellido='" + factura.Apellido + "' and DPI='" + factura.Dpi + "' and zona_entrega='" + factura.Zona + "' and fecha ='" + factura.Fecha + "'", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+                int codigo = -1;
+                s = reader.VisibleFieldCount;
+                while (reader.Read())
                 {
-                    cmd = new SqlCommand("INSERT INTO detalle_factura (detalle_cod_factura, producto_cod_producto) VALUES(" + codigo + "," + prod.codigo + ")");
-                    s = cmd.ExecuteNonQuery();
+                    codigo = reader.GetInt32(0);
+                    s = codigo;
                 }
-            }
-            else
-                s = 0;
+                con.Close();
 
-            con.Close();         
+
+                if (codigo > 0)
+                {
+                    for (int i = 0; i < productos.Count; i++)
+                    {
+                        ProductoCarrito producto = productos.ElementAt(i);
+                        con = Conexion.ObtenerConexion();
+                        cmd = new SqlCommand("INSERT INTO detalle_factura (detalle_cod_factura, producto_cod_producto) VALUES(" + codigo + "," + producto.codigo + ")", con);
+                        s = cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+                }
+                else
+                    s = 0;
+
+            }
             return s;
         }
     }

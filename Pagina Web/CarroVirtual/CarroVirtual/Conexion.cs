@@ -8,8 +8,8 @@ using System.Data.SqlClient;
 namespace CarroVirtual
 {
     public class Conexion
-    {
-        public static String cadenaConexion = "Data Source=RODE11;Initial Catalog=p2;Integrated Security=True";
+    {//
+        public static String cadenaConexion = "Data Source=DESKTOP-HLC93MN\\SQLEXPRESS;Initial Catalog=p2;Integrated Security=True";
         public static Boolean inicioSesion = false;
 
         //<======================= CONEXION A LA BASE DE DATOS ===========================================
