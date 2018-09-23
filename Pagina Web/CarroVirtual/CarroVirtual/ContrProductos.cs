@@ -46,21 +46,23 @@ namespace CarroVirtual
             return producto;
         }
 
-        public static void EliminarProducto(int cod_producto)
+        public static Boolean EliminarProducto(int cod_producto)
         {
             SqlConnection con = Conexion.ObtenerConexion();
             SqlCommand cmd = new SqlCommand("DELETE producto WHERE cod_producto = " + cod_producto + "", con);
             int s = cmd.ExecuteNonQuery();
             con.Close();
+            return true;
         }
 
-        public static void EditarProducto(Producto producto)
+        public static Boolean EditarProducto(Producto producto)
         {
             SqlConnection con = Conexion.ObtenerConexion();
             SqlCommand cmd = new SqlCommand("UPDATE producto SET nombre = '" + producto.nombre + "', cantidad = " + producto.cantidad + ", precio_venta = " + producto.precio_venta + ", detalles = '" + producto.detalles + "', categoria_cod_categoria = " + producto.categoria_cod_categoria + ", imagen = @IMAGEN WHERE cod_producto = " + producto.cod_producto + "", con);
             cmd.Parameters.Add("@IMAGEN", System.Data.SqlDbType.VarBinary).Value = producto.imagen;
             int s = cmd.ExecuteNonQuery();
             con.Close();
+            return true;
         }
 
         public static bool ExisteProducto(Producto producto, Categoria categoria)

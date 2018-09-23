@@ -69,5 +69,75 @@ namespace Pruebas
             //Assert
             Assert.AreEqual(true, resultado);
         }
+
+        /*
+        Nombre: Eliminar Producto
+        Detalles: Eliminar un producto por su (Codigo)
+         */
+        [TestMethod]
+        public void EliminarProducto()
+        {
+            //Arrange
+            int codigoProducto = 1;
+            bool resultado = false;
+
+            //Act
+            resultado = ContrProductos.EliminarProducto(codigoProducto);
+
+            //Assert
+            Assert.AreEqual(true, resultado);
+        }
+
+        /*
+        Nombre: Editar Producto
+        Detalles: Editar un producto como parametro (Producto)
+         */
+        [TestMethod]
+        public void EditarProducto()
+        {
+            //Arrange
+            Boolean resultado = false;
+            Categoria catProducto = new Categoria();
+            catProducto.cod_categoria = 1;
+            Producto nuevoProducto = new Producto();
+            nuevoProducto.cod_producto = 2;
+            nuevoProducto.nombre = "Super smash bros MODIFICADO";
+            nuevoProducto.precio_venta = 300;
+            nuevoProducto.cantidad = 50;
+            nuevoProducto.categoria_cod_categoria = 1;
+            nuevoProducto.detalles = "super smash wii u";
+
+            //Act
+            resultado = ContrProductos.EditarProducto(nuevoProducto);
+
+            //Assert
+            Assert.AreEqual(true, resultado);
+        }
+
+        /*
+        Nombre: Existe Producto
+        Detalles: Verificar si un producto existe como parametro (Producto,Categoria)
+         */
+        [TestMethod]
+        public void ExisteProducto()
+        {
+            //Arrange
+            Boolean resultado = false;
+            Categoria catProducto = new Categoria();
+            catProducto.cod_categoria = 1;
+            Producto nuevoProducto = new Producto();
+            nuevoProducto.cod_producto = 2;
+            nuevoProducto.nombre = "Super smash bros MODIFICADO";
+            nuevoProducto.precio_venta = 300;
+            nuevoProducto.cantidad = 50;
+            nuevoProducto.categoria_cod_categoria = 1;
+            nuevoProducto.detalles = "super smash wii u";
+
+            //Act
+            resultado = ContrProductos.ExisteProducto(nuevoProducto,catProducto);
+
+            //Assert
+            Assert.AreEqual(true, resultado);
+        }
     }
 }
