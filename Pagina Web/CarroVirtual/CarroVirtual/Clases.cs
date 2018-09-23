@@ -20,6 +20,7 @@ namespace CarroVirtual
         public byte[] imagen { get; set; }
         public int categoria_cod_categoria { get; set; }
 
+
         public Producto() {
             this.nombre = "";
             this.detalles = "";
@@ -29,7 +30,16 @@ namespace CarroVirtual
             this.categoria_cod_categoria = 0;
         }
     }
-
+    public class Factura
+    {
+        private string nombre, apellido, zona, dpi;
+        private DateTime fecha;
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Apellido { get => apellido; set => apellido = value; }
+        public string Zona { get => zona; set => zona = value; }
+        public string Dpi { get => dpi; set => dpi = value; }
+        public DateTime Fecha { get => fecha; set => fecha = value; }
+    }
     public class Categoria
     {
         public String nombre { get; set; }
