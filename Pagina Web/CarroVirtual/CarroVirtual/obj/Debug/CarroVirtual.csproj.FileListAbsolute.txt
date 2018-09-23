@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
->>>>>>> 3efdd9dcedcb79f4f29937893bae950cea1fb200
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.dll.config
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.dll
 C:\Users\juan\Documents\GitHub\practica2AYD12\Pagina Web\CarroVirtual\CarroVirtual\bin\CarroVirtual.pdb
@@ -438,4 +435,3 @@ C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\es\System.Net.Http.Formatting.resources.dll
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\es\System.Web.Http.resources.dll
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 2\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\es\System.Web.Http.WebHost.resources.dll
->>>>>>> 73dc00c205a5ceaaa3873c0bb5e9dac3b7ada209
