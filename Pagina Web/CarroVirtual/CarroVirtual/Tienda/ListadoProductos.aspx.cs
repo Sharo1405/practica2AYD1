@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
 
 namespace CarroVirtual.Tienda
 {
@@ -12,8 +13,39 @@ namespace CarroVirtual.Tienda
         string busquedaNombre = null;
         string categoria = null;
 
+        public void CargarCategorias()
+        {
+
+            List<Categoria> categorias = Gestion_categoria_crud.ObtenerCategorias();
+
+            for (int i = 0; i < categorias.Count; i++)
+            {
+                Categoria categoria = categorias[i];
+
+                //CREO EL <li>
+                HtmlGenericControl li_prueba = new HtmlGenericControl("li");
+                li_prueba.Attributes["class"] = "nav-item";
+
+                //CREO EL LINKBUTTON
+                LinkButton btn_cat = new LinkButton() { Text = categoria.nombre, CommandArgument=Convert.ToString(categoria.cod_categoria),CssClass = "nav-link" };
+                btn_cat.Click += delegate { Click_Btn_Cat(btn_cat, new EventArgs()); };
+
+                //AGREGO AL HTML
+                li_prueba.Controls.Add(btn_cat);
+                lista_cat.Controls.Add(li_prueba);
+            }
+            
+        }
+
+        protected void Click_Btn_Cat(object sender, EventArgs e)
+        {
+            categoria = ((LinkButton)sender).Text;
+            buscarProductos(null, categoria, 0);
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            CargarCategorias();
             /* List<ProductoCarrito> listaProductos = new List<ProductoCarrito>()
  ;
 
@@ -47,35 +79,9 @@ namespace CarroVirtual.Tienda
 
         }
 
-
         protected void LinkButtonAll_Click(object sender, EventArgs e)
         {
             categoria = null;
-
-            buscarProductos(busquedaNombre, categoria, 0);
-        }
-
-        protected void LinkButtonPS_Click(object sender, EventArgs e)
-        {
-            categoria = "PS";
-            buscarProductos(busquedaNombre, categoria, 0);
-        }
-
-        protected void LinkButtonNINTENDO_Click(object sender, EventArgs e)
-        {
-            categoria = "W";
-            buscarProductos(busquedaNombre, categoria, 0);
-        }
-
-        protected void LinkButtonPC_Click(object sender, EventArgs e)
-        {
-            categoria = "PC";
-            buscarProductos(busquedaNombre, categoria, 0);
-        }
-
-        protected void LinkButtonXBOX_Click(object sender, EventArgs e)
-        {
-            categoria = "XBOX";
             buscarProductos(busquedaNombre, categoria, 0);
         }
 

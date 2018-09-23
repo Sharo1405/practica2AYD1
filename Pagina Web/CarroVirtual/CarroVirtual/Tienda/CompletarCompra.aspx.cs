@@ -10,7 +10,12 @@ namespace CarroVirtual
     public partial class CompletarCompra : System.Web.UI.Page
     {
         List<ProductoCarrito> productos=null;
- 
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
         protected void btn_registrar_Click(object sender, EventArgs e)
         {
             if (txt_nombre.Text != "" && txt_apellido.Text != "" && txt_direccion.Text != "" && txt_dpi.Text != "")
@@ -41,7 +46,6 @@ namespace CarroVirtual
                 Conexion.MsgBox("Debe llenar todos los campos solicitados!", this.Page, this);
                 txt_nombre.Focus();
             }
-            
         }
     }
 }
