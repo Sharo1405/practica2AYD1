@@ -19,6 +19,20 @@ namespace CarroVirtual
             return dt;
         }
 
+        public static int EstadosInicales()
+        {
+            SqlConnection con = Conexion.ObtenerConexion();
+            //Comando
+            SqlCommand cmd = new SqlCommand("update factura set estado = 1" +
+                                            "where estado is null; ", con);
+
+            int affectedRows = cmd.ExecuteNonQuery();
+            con.Close();
+
+            return affectedRows;
+
+        }
+
         public static string obtenerFacturaPrueba()
         {
             string id = "0";

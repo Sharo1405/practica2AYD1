@@ -96,7 +96,7 @@
             <a class="nav-link waves-effect" href="/Login_Admin.aspx" target="_blank">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="BuscarEstado.aspx">Ver Estado Compra</a>
+            <a class="nav-link waves-effect" href="/BuscarEstado.aspx">Ver Estado Compra</a>
           </li>
     
         </ul>

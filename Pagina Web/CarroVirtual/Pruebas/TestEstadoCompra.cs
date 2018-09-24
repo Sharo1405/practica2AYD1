@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using CarroVirtual;
+using CarroVirtual.Tienda;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Pruebas
@@ -70,5 +71,65 @@ namespace Pruebas
 
 
         }
+
+        /* 
+         * Colocar estado inicial
+        * Descripcion:dar estado inicial al pedido
+        */
+        [TestMethod]
+        public void ValorEstadosIniciales()
+        {
+            //Arrenge
+            int filas_esperadas = 0;
+
+            //Act
+            ClassEditarPedido.EstadosInicales();
+            int affectedRows = ClassEditarPedido.EstadosInicales(); 
+
+            //Asset
+            Assert.AreNotEqual(filas_esperadas, affectedRows);
+
+
+        }
+
+        /* 
+         * Buscar por Codigo factura
+        * Descripcion:dar los datos por codigo factura
+        */
+        [TestMethod]
+        public void BuscarPorCodigo()
+        {
+            //Arrenge
+            string buscar = "5" ;
+            BuscarEstadoClass.facturaPureba();
+            //Act
+            DataTable tabla = BuscarEstadoClass.obtenerPedido(buscar);
+
+            //Asset
+            Assert.AreEqual(tabla.Rows[0][0], 5);
+            Assert.AreEqual(tabla.Rows[0][1], 2987);
+            Assert.AreEqual(tabla.Rows[0][2], "Zona 12");
+        }
+
+        /* 
+         * Obtener producto por Codigo factura
+        * Descripcion:dar los datos por codigo factura
+        */
+        [TestMethod]
+        public void DetalleProducto()
+        {
+            //Arrenge
+            int codPedido = 5;
+            BuscarEstadoClass.facturaPureba();
+            //Act
+            DataTable tabla = BuscarEstadoClass.obtenerdetalle(codPedido);
+
+            //Asset
+            Assert.AreEqual(tabla.Rows[0][0], "Producto1" );
+            Assert.AreEqual(tabla.Rows[0][1], "Detalle1");
+            Assert.AreEqual(tabla.Rows[0][2], "100");
+        }
+
+
     }
 }

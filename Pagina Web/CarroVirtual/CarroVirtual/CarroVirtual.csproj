@@ -84,7 +84,7 @@
     <Content Include="BaseCompra.master" />
     <None Include="packages.config" />
     <Content Include="EditarPedido.aspx" />
-    <Content Include="Tienda\BuscarEstado.aspx" />
+    <Content Include="BuscarEstado.aspx" />
     <Content Include="Tienda\CardCarrito.ascx" />
     <Content Include="Tienda\css\addons\datatables.css" />
     <Content Include="Tienda\css\addons\datatables.min.css" />
@@ -218,6 +218,7 @@
     <Compile Include="BaseCompra.master.designer.cs">
       <DependentUpon>BaseCompra.master</DependentUpon>
     </Compile>
+    <Compile Include="BuscarEstadoClass.cs" />
     <Compile Include="Clases.cs" />
     <Compile Include="ClassEditarPedido.cs" />
     <Compile Include="CompletarCompra.aspx.cs">
@@ -296,11 +297,11 @@
     <Compile Include="registrarProducto.aspx.designer.cs">
       <DependentUpon>registrarProducto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Tienda\BuscarEstado.aspx.cs">
+    <Compile Include="BuscarEstado.aspx.cs">
       <DependentUpon>BuscarEstado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Tienda\BuscarEstado.aspx.designer.cs">
+    <Compile Include="BuscarEstado.aspx.designer.cs">
       <DependentUpon>BuscarEstado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tienda\CardCarrito.ascx.cs">

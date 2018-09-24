@@ -13,7 +13,7 @@ namespace CarroVirtual
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
+            ClassEditarPedido.EstadosInicales();
         }
 
         protected void editarPedido(object sender, EventArgs e)
