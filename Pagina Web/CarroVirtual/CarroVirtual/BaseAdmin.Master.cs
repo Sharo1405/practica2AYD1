@@ -47,5 +47,10 @@ namespace CarroVirtual
         {
             Response.Redirect("Editar_categoria.aspx");
         }
+
+        protected void lbl_EditarPedido_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditarPedido.aspx");
+        }
     }
 }
