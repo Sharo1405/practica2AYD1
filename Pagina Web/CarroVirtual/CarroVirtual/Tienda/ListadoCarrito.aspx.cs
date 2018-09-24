@@ -11,7 +11,7 @@ namespace CarroVirtual.Tienda
     {        
         protected void Page_Load(object sender, EventArgs e)
         {
-            //buscarProductos();
+            buscarProductos();
         }
 
         protected void buscarProductos()
