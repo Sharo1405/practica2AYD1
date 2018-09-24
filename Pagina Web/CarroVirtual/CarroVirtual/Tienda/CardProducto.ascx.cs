@@ -37,5 +37,10 @@ namespace CarroVirtual.Tienda
         {
             ShowMessage("Ayuda", (String)e.CommandArgument);
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Conexion.MsgBox("hola bb <3",this.Page,this);
+        }
     }
 }
