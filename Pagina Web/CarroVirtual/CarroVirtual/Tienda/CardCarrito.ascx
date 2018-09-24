@@ -30,12 +30,25 @@
                     </a>
                 </strong>
             </h5>
+            <h5>
             <h4 class="font-weight-bold blue-grey-text">
                 <strong>
                     $
                     <%= ProductoCarrito.precio %>                    
                 </strong>
-            </h4>                                             
+            </h4>  
+            </h5>
+            <h5>
+                <h6 class="dark-grey-text">
+                        Unds disp: 
+                        <%= ProductoCarrito.cantidadDisponible %>                                        
+                </h6>  
+            </h5>
+            <h5>
+                <h6>
+                        Requerido: 1                                                               
+                </h6>  
+            </h5>
 
         </div>
         <!--Card content-->
