@@ -70,7 +70,7 @@
 
       <!-- Brand -->
       <a class="navbar-brand waves-effect" href="#" target="_blank">
-         <strong class="lime-text">GMZ</strong>
+         <strong class="lime-text">AD-Market</strong>
       </a>
 
       <!-- Collapse -->
@@ -88,10 +88,10 @@
             <a class="nav-link waves-effect" href="ListadoProductos.aspx">Tienda
               <span class="sr-only">(current)</span>
             </a>
-          </li>
+          </li><!--
           <li class="nav-item">
             <a class="nav-link waves-effect" href="#">Mi Compra</a>
-          </li>
+          </li>-->
           <li class="nav-item">
             <a class="nav-link waves-effect" href="/Login_Admin.aspx" target="_blank">Login</a>
           </li>
@@ -104,10 +104,10 @@
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
-            <a class="nav-link waves-effect">
-              <span class="badge red z-depth-1 mr-1"> 1 </span>
+            <a class="nav-link waves-effect" href="ListadoCarrito.aspx">
+              <!--<span class="badge red z-depth-1 mr-1"> 1 </span>-->
               <i class="fa fa-shopping-cart"></i>
-              <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+              <span class="clearfix d-none d-sm-inline-block"> Carro </span>
             </a>
           </li>
         </ul>

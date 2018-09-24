@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 namespace CarroVirtual.Tienda
 {
     public partial class CardProducto : System.Web.UI.UserControl
-    {
+    {        
         public ProductoCarrito ProductoCarrito { get; set; }
         public string nombreP { get; set; }
 /**
@@ -21,24 +21,21 @@ namespace CarroVirtual.Tienda
 **/
         protected void Page_Load(object sender, EventArgs e)
         {
-            Console.WriteLine(nombreP);
+            if (!IsPostBack)
+            {
+                // Solo se llama la primera vez que se carga la página
+                Console.WriteLine(nombreP);
+            }            
         }
-
-
-        //ELIMINAR SI NO SIRVE
+        
         private void ShowMessage(string Message, string Title)
         {
             ScriptManager.RegisterStartupScript(Page, this.GetType(), "alert", string.Format("alert('{1}', '{0}');", Message, Title), true);
         }
-        protected void Button2_Click(object sender, EventArgs e)
+        
+        protected void Button1_Command(object sender, CommandEventArgs e)
         {
-            //Console.WriteLine("Holabb");
-            ShowMessage("Ayuda", "Ayuda");
-            /*busquedaNombre = searchText.Text;
-            if (busquedaNombre != null && busquedaNombre.Trim().Length <= 0)
-                busquedaNombre = null;
-            buscarProductos(busquedaNombre, categoria, 0);*/
+            ShowMessage("Ayuda", (String)e.CommandArgument);
         }
-        //HASTA ACÁ ELIMINAR
     }
 }

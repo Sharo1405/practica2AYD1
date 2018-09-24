@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Data;
 using System.Web;
 
 namespace CarroVirtual.Tienda
@@ -84,6 +85,16 @@ namespace CarroVirtual.Tienda
             return productosMostrados;
         }
 
+        internal static void VaciarCarro()
+        {
+            string cad = "TRUNCATE TABLE carro;";
+
+            SqlConnection con = Conexion.ObtenerConexion();
+            SqlCommand cmd = new SqlCommand(cad, con);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+            con.Close();            
+        }
 
         internal static List<ProductoCarrito> BuscarProductCar() //busqueda 
         {
