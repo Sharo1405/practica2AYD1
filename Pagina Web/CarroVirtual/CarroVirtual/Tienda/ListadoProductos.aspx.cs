@@ -10,8 +10,9 @@ namespace CarroVirtual.Tienda
 {
     public partial class Productos : System.Web.UI.Page
     {
-        string busquedaNombre = null;
-        string categoria = null;
+        public string busquedaNombre = null;
+        public string categoria = null;
+        public int pagina = 0;
 
         public void CargarCategorias()
         {
@@ -40,39 +41,32 @@ namespace CarroVirtual.Tienda
         protected void Click_Btn_Cat(object sender, EventArgs e)
         {
             categoria = ((LinkButton)sender).Text;
-            buscarProductos(null, categoria, 0);
+            pagina = 0;
+
+            buscarProductos(busquedaNombre, categoria, ContrMostrarProductos.PAGINACION.PAGINICIAL);
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
             CargarCategorias();
-            /* List<ProductoCarrito> listaProductos = new List<ProductoCarrito>()
- ;
-
-             ProductoCarrito producto = new ProductoCarrito();
-             producto.nombre = "producto1";
-             producto.categoria = "cat";
-             producto.precio = 5;
-
-             ProductoCarrito producto2 = new ProductoCarrito();
-             producto2.nombre = "producto2";
-             producto2.categoria = "cat";
-             producto2.precio = 5;
-
-             CardProducto cardProducto = new CardProducto { nombreP = producto.nombre };
-
-
-             listaProductos.Add(producto);
-             listaProductos.Add(producto2);
-
-             this.ListViewCardProducts.DataSource = listaProductos;
-             this.ListViewCardProducts.DataBind();*/
         }
 
-        protected void buscarProductos(string nombre, string categoria, int paginacion)
+        protected void buscarProductos(string nombre, string categoria, ContrMostrarProductos.PAGINACION paginacion)
         {
+
+            Conexion.categoria = categoria;
+            Conexion.juegoBuscar = nombre;
+
             //BUSCO EL PRODUCTO POR NOMBRE O POR CODIGO
             List<ProductoCarrito> listaProductos = ContrMostrarProductos.BuscarProductos(categoria, nombre, paginacion);
+
+            //SI NO HAY PRODUCTO ES QUE LLEGAMOS AL MAXIMO DE PAGINAS Y VOLVEMOS A COMENZAR
+            if (paginacion == ContrMostrarProductos.PAGINACION.ADELANTE && (listaProductos == null || listaProductos.Count <= 0))
+            {
+                pagina = 0;
+                listaProductos = ContrMostrarProductos.BuscarProductos(categoria, nombre, ContrMostrarProductos.PAGINACION.PAGINICIAL);
+            }
+
 
             this.ListViewCardProducts.DataSource = listaProductos;
             this.ListViewCardProducts.DataBind();
@@ -87,12 +81,14 @@ namespace CarroVirtual.Tienda
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            pagina = 0;
             busquedaNombre = searchText.Text;
+
             if (busquedaNombre != null && busquedaNombre.Trim().Length <= 0)
                 busquedaNombre = null;
-                
 
-            buscarProductos(busquedaNombre, categoria, 0);
+
+            buscarProductos(busquedaNombre, categoria, ContrMostrarProductos.PAGINACION.PAGINICIAL);
         }
 
 
@@ -102,23 +98,26 @@ namespace CarroVirtual.Tienda
             ScriptManager.RegisterStartupScript(Page, this.GetType(), "alert", string.Format("alert('{1}', '{0}');", Message, Title), true);
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void PREVIOUS_Command(object sender, CommandEventArgs e)
         {
-            //Console.WriteLine("Holabb");
-            //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Record Inserted Successfully')", true);
-            //ShowMessage("Ayuda", "Ayuda");
-            Button clickedButton = (Button)sender;
-            clickedButton.Text = "...button clicked...";
-            clickedButton.Enabled = false;
 
-            // Display the greeting label text.
+            pagina -= 1;
 
-            //Label1.Text = "Hola";
-            /*busquedaNombre = searchText.Text;
-            if (busquedaNombre != null && busquedaNombre.Trim().Length <= 0)
-                busquedaNombre = null;
-            buscarProductos(busquedaNombre, categoria, 0);*/
-        }        
-        //HASTA ACÁ ELIMINAR
+            if (pagina < 0)
+                pagina = 0;
+
+            buscarProductos(Conexion.juegoBuscar, Conexion.categoria, ContrMostrarProductos.PAGINACION.ATRAS);
+        }
+
+        protected void NEXT_Command(object sender, CommandEventArgs e)
+        {
+
+            pagina += 1;
+
+            buscarProductos(Conexion.juegoBuscar, Conexion.categoria, ContrMostrarProductos.PAGINACION.ADELANTE);
+            //ShowMessage((String)e.CommandArgument, (String)e.CommandArgument);
+        }
+
+
     }
 }

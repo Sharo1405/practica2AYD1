@@ -7,114 +7,100 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--Main layout-->
-  <main>
-    <div class="container">
+    <main>
+        <div class="container">
 
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark mdb-color  special-color-dark mt-3 mb-5">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark mdb-color  special-color-dark mt-3 mb-5">
 
-        <!-- Navbar brand -->
-        <span class="navbar-brand">Categories:</span>
+                <!-- Navbar brand -->
+                <span class="navbar-brand">Categories:</span>
 
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
 
-          <!-- Links -->
-          <ul class="navbar-nav mr-auto" id="lista_cat" runat="server">
-            <li class="nav-item active" runat="server" id="li_todos">
-              <asp:LinkButton ID="LinkButtonAll" runat="server" class="nav-link" OnClick="LinkButtonAll_Click">ALL</asp:LinkButton>
-                <span class="sr-only">(current)</span>
-            </li>
-          </ul>
-          <!-- Links -->
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto" id="lista_cat" runat="server">
+                        <li class="nav-item active" runat="server" id="li_todos">
+                            <asp:LinkButton ID="LinkButtonAll" runat="server" class="nav-link" OnClick="LinkButtonAll_Click">ALL</asp:LinkButton>
+                            <span class="sr-only">(current)</span>
+                        </li>
+                    </ul>
+                    <!-- Links -->
 
-          <form class="form-inline">
-            <div class="md-form my-2">
-              <!--input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"-->
-              <asp:TextBox class="form-control mr-sm-2" ID="searchText" runat="server" ></asp:TextBox>              
-            </div>
-              <div class="md-form my-2">
-              <asp:Button ID="Button1" runat="server" Text="Buscar" class="btn btn-primary btn-deep-orange " OnClick="Button1_Click"/>               
-</div>
-            
-          </form>
+                    <form class="form-inline">
+                        <div class="md-form my-2">
+                            <!--input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"-->
+                            <asp:TextBox class="form-control mr-sm-2" ID="searchText" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="md-form my-2">
+                            <asp:Button ID="Button1" runat="server" Text="Buscar" class="btn-sm special-color-dark " Style="padding: 0px; border: 0px;" OnClick="Button1_Click" />
+                        </div>
+
+                    </form>
+                </div>
+                <!-- Collapsible content -->
+
+            </nav>
+            <!--/.Navbar-->
+
+            <!--Section: Products v.3-->
+            <section class="text-center mb-4">
+
+                <!--Grid row-->
+                <div class="row wow fadeIn">
+
+                    <asp:ListView ID="ListViewCardProducts" runat="server">
+                        <ItemTemplate>
+
+                            <uc1:CardProducto runat="server" ID="CardProducto" ProductoCarrito="<%# Container.DataItem %>" />
+                        </ItemTemplate>
+
+                    </asp:ListView>
+
+
+
+                </div>
+                <!--Grid row-->
+
+
+            </section>
+            <!--Section: Products v.3-->
+
+            <!--Pagination-->
+            <nav class="d-flex justify-content-center wow fadeIn">
+                <ul class="pagination pg-amber">
+
+                    <!--Arrow left-->
+
+
+                    <li class="page-item">
+                        <a class="page-link mt-0" href="#">
+                            <asp:Button ID="PREVIOUS" runat="server" Text="ATRAS" class="btn-sm" Style="padding: 0px; border: 0px;" CommandName="filtro" CommandArgument="<%#pagina%>" OnCommand="PREVIOUS_Command" />
+                        </a>
+                    </li>
+                    <li class="page-item mx-auto">
+                        <a class="page-link align-self-center" href="#">
+                            <%=pagina%>
+                        </a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link " href="#">
+                            <asp:Button ID="NEXT" runat="server" Text="ADELA" class="btn-sm" Style="padding: 0px; border: 0px;" OnCommand="NEXT_Command" />
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <!--Pagination-->
+
         </div>
-        <!-- Collapsible content -->
-
-      </nav>
-      <!--/.Navbar-->
-
-      <!--Section: Products v.3-->
-      <section class="text-center mb-4">
-        
-            <!--Grid row-->
-            <div class="row wow fadeIn">
-               
-              <asp:ListView ID="ListViewCardProducts" runat="server">
-                  <ItemTemplate>
-
-                      <uc1:CardProducto runat="server" id="CardProducto" ProductoCarrito="<%# Container.DataItem %>"/>
-              <!--        <asp:TextBox class="form-control mr-sm-2" ID="Label1" runat="server"  />
-              <asp:Button ID="Button2" runat="server" Text="Agregar al carrito" class="btn btn-primary btn-deep-orange " OnClick="Button2_Click"/> -->
-                  </ItemTemplate>
-
-              </asp:ListView>
-
-              
-
-            </div>
-            <!--Grid row-->
-        
-
-      </section>        
-      <!--Section: Products v.3-->
-
-      <!--Pagination-->
-      <nav class="d-flex justify-content-center wow fadeIn">
-        <ul class="pagination pg-amber">
-
-          <!--Arrow left-->
-          <li class="page-item disabled">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li>
-
-          <li class="page-item active">
-            <a class="page-link" href="#">1
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">2</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">4</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">5</a>
-          </li>
-
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!--Pagination-->
-
-    </div>
-  </main>
+    </main>
 </asp:Content>
