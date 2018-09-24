@@ -75,6 +75,18 @@
 						                    </li>
                                         </ul>    
                                     </div>
+
+                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-11">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="has-dropdown">
+							                    <a>Modificar Pedido</a>
+							                    <ul class="dropdown">
+                                                    <li><asp:LinkButton OnClick="lbl_EditarPedido_Click" runat="server" ID="LinkButton4" text="Editar Estado de Compra" Visible="true"></asp:LinkButton></li>
+                                                </ul>
+						                    </li>
+                                        </ul>    
+                                    </div>
+
                                 </div>
                             </nav>
                         </div>	

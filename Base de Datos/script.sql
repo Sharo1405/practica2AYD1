@@ -52,7 +52,15 @@ ALTER TABLE carro
     ADD CONSTRAINT carro_producto_fk FOREIGN KEY ( producto_cod_producto )
     REFERENCES producto ( cod_producto ) ON DELETE CASCADE;
 
-insert into carro(producto_cod_producto) values
-(1),(2),(3),(4);
+-- Estado Pedido
 
-select * from carro;
+create table EstadoPedido(
+	cod_estado INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	nombre VARCHAR(200),
+);
+
+insert into EstadoPedido (nombre )values('Iniciado'),('Completado'),('Cancelado');
+
+alter table Factura
+	Add Estado INT, CONSTRAINT factura_estado__fk FOREIGN KEY ( Estado)
+    REFERENCES EstadoPedido ( cod_estado ) ON DELETE CASCADE;

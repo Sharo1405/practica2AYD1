@@ -10,7 +10,7 @@ namespace CarroVirtual
     public class Conexion
 
     {
-        public static String cadenaConexion = "Data Source=RODE11;Initial Catalog=p2;Integrated Security=True";
+        public static String cadenaConexion = "Data Source=DESKTOP-QCSMJG9;Initial Catalog=p2;Integrated Security=True";
 
         public static Boolean inicioSesion = false;
 
