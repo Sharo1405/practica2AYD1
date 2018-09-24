@@ -10,8 +10,10 @@ namespace CarroVirtual
     public class Conexion
 
     {
-        public static String cadenaConexion = "Data Source=DESKTOP-QCSMJG9;Initial Catalog=p2;Integrated Security=True";
-
+        public static String cadenaConexion = "Data Source=DESKTOP-G73N98F;Initial Catalog=p2;Integrated Security=True";
+        public static int pagina;
+        public static string juegoBuscar;
+        public static string categoria;
         public static Boolean inicioSesion = false;
 
         //<======================= CONEXION A LA BASE DE DATOS ===========================================

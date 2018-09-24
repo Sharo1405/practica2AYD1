@@ -38,7 +38,7 @@
                 </strong>
             </h4>                                             
             <asp:Button ID="Button1" runat="server" Text="Agregar" class="btn btn-primary btn-deep-orange" 
-                CommandName="producto" CommandArgument="<%# ProductoCarrito.nombre %>" "Button1_Command"/>
+                CommandName="producto" CommandArgument="<%# ProductoCarrito.nombre %>" />
 
         </div>
         <!--Card content-->
