@@ -65,3 +65,11 @@ insert into EstadoPedido (nombre )values('Iniciado'),('Completado'),('Cancelado'
 alter table Factura
 	Add Estado INT, CONSTRAINT factura_estado__fk FOREIGN KEY ( Estado)
     REFERENCES EstadoPedido ( cod_estado ) ON DELETE CASCADE;
+
+
+	select * from carro;
+	truncate table carro;
+	SELECT * from producto;
+	select * from categoria;
+
+	insert into carro(producto_cod_producto) values (1),(2),(3);

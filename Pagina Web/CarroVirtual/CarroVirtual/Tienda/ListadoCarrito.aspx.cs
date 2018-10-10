@@ -23,13 +23,13 @@ namespace CarroVirtual.Tienda
             this.ListViewCardProducts.DataBind();
 
         }
-
+        
         protected void Button2_Click(object sender, EventArgs e)
         {
             List<ProductoCarrito> listaProductos = ContrMostrarProductos.BuscarProductCar();
-            Facturacion.productos = listaProductos;
+            CompletarCompra.productos = listaProductos;
             ContrMostrarProductos.VaciarCarro();
             Response.Redirect("../CompletarCompra.aspx");
-        }
+        }        
     }
 }

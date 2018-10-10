@@ -56,6 +56,7 @@
     <Compile Include="TestProducto.cs" />
     <Compile Include="TestCompletarCompra.cs" />
     <Compile Include="TestEstadoCompra.cs" />
+    <Compile Include="TestCarro.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

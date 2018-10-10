@@ -37,8 +37,12 @@
             </div>
             <!--Grid row-->        
       </section>        
-      <!--Section: Products v.3-->        
-        <asp:Button ID="Button2" runat="server" Text="Confirmar Compra" class="btn btn-primary btn-deep-orange " OnClick="Button2_Click"/>               
+      <!--Section: Products v.3-->                
+        <div class="btn-group dropright">
+                <asp:DropDownList id="combo_carro" DataSourceID="SqlDataSource1" DataValueField="producto_cod_producto" class="btn btn-primary dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cadenaConexion %>" SelectCommand="SELECT * FROM [carro]"></asp:SqlDataSource>                
+                <asp:Button ID="Button2" runat="server" Text="Confirmar Compra" class="btn btn-primary btn-deep-orange " OnClick="Button2_Click"/>               
+            </div>	
     </div>
   </main>
   <!--Main layout-->

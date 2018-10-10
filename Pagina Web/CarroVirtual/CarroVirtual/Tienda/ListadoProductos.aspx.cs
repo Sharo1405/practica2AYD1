@@ -91,12 +91,17 @@ namespace CarroVirtual.Tienda
             buscarProductos(busquedaNombre, categoria, ContrMostrarProductos.PAGINACION.PAGINICIAL);
         }
 
+        public void Button3_Click(object sender, EventArgs e)
+        {
+            int a = Convert.ToInt32(combo_carro.SelectedValue);
+            //string b = a.ToString();
+            //ShowMessage(b, "Prueba");
+        }
 
-        //ELIMINAR SI NO SIRVE
         private void ShowMessage(string Message, string Title)
         {
             ScriptManager.RegisterStartupScript(Page, this.GetType(), "alert", string.Format("alert('{1}', '{0}');", Message, Title), true);
-        }
+        }        
 
         protected void PREVIOUS_Command(object sender, CommandEventArgs e)
         {
@@ -116,8 +121,6 @@ namespace CarroVirtual.Tienda
 
             buscarProductos(Conexion.juegoBuscar, Conexion.categoria, ContrMostrarProductos.PAGINACION.ADELANTE);
             //ShowMessage((String)e.CommandArgument, (String)e.CommandArgument);
-        }
-
-
+        }        
     }
 }

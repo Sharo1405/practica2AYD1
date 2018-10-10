@@ -96,12 +96,12 @@ namespace CarroVirtual.Tienda
             con.Close();            
         }
 
-        internal static List<ProductoCarrito> BuscarProductCar() //busqueda 
+        public static List<ProductoCarrito> BuscarProductCar() //busqueda 
         {
             List<ProductoCarrito> productosMostrados = new List<ProductoCarrito>();
             ProductoCarrito producto;
 
-            string OBTENER_PRODUCTOS = "SELECT  P.NOMBRE NOMBRE, " +
+            string OBTENER_PRODUCTOS = "SELECT  P.cod_producto CODIGO, P.NOMBRE NOMBRE, " +
                                                         "p.cantidad CANTIDAD, " +
                                                         "P.PRECIO_VENTA PRECIO, " +
                                                         "P.IMAGEN IMAGEN, " +
@@ -120,6 +120,7 @@ namespace CarroVirtual.Tienda
             while (reader.Read())
             {
                 producto = new ProductoCarrito();
+                producto.codigo = (Int32)reader["CODIGO"];
                 producto.nombre = (String)reader["NOMBRE"];
                 producto.cantidadDisponible = (Int32)reader["CANTIDAD"];
                 producto.precio = (Int32)reader["PRECIO"];

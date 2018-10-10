@@ -36,10 +36,10 @@
                     <%= ProductoCarrito.precio %>
                     <!-- <button class="btn btn-default" OnClick="Button1_Click">Agregar</button> -->
                 </strong>
-            </h4>                                             
+            </h4>    
+            <!--
             <asp:Button ID="Button1" runat="server" Text="Agregar" class="btn btn-primary btn-deep-orange" 
-                CommandName="producto" CommandArgument="<%# ProductoCarrito.nombre %>" />
-
+                CommandName="producto" CommandArgument="<%# ProductoCarrito.nombre %>" />-->
 
         </div>
         <!--Card content-->

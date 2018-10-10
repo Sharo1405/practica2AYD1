@@ -40,7 +40,7 @@
                             <asp:TextBox class="form-control mr-sm-2" ID="searchText" runat="server"></asp:TextBox>
                         </div>
                         <div class="md-form my-2">
-                            <asp:Button ID="Button1" runat="server" Text="Buscar" class="btn-sm special-color-dark " Style="padding: 0px; border: 0px;" OnClick="Button1_Click" />
+                            <asp:Button ID="Button1" runat="server" Text="Buscar" class="btn btn-primary btn-deep-orange" Style="padding: 0px; border: 0px;" OnClick="Button1_Click" />
                         </div>
 
                     </form>
@@ -59,19 +59,23 @@
                     <asp:ListView ID="ListViewCardProducts" runat="server">
                         <ItemTemplate>
 
-                            <uc1:CardProducto runat="server" ID="CardProducto" ProductoCarrito="<%# Container.DataItem %>" />
+                            <uc1:CardProducto runat="server" ID="CardProducto" ProductoCarrito="<%# Container.DataItem %>" />                            
+
                         </ItemTemplate>
 
                     </asp:ListView>
-
-
-
+                
                 </div>
-                <!--Grid row-->
-
+                <!--Grid row-->                
 
             </section>
-            <!--Section: Products v.3-->
+            <!--Section: Products v.3-->                        
+                     
+            <div class="btn-group dropright">
+                <asp:DropDownList id="combo_carro" DataSourceID="SqlDataSource1" DataTextField="nombre" DataValueField="cod_producto" class="btn btn-primary dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" runat="server"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cadenaConexion %>" SelectCommand="SELECT * FROM [producto]"></asp:SqlDataSource>                
+                <asp:Button ID="Button3" runat="server" Text="Agregar al carro" class="btn btn-primary btn-deep-orange" OnClick="Button3_Click" />
+            </div>			
 
             <!--Pagination-->
             <nav class="d-flex justify-content-center wow fadeIn">
@@ -82,7 +86,7 @@
 
                     <li class="page-item">
                         <a class="page-link mt-0" href="#">
-                            <asp:Button ID="PREVIOUS" runat="server" Text="ATRAS" class="btn-sm" Style="padding: 0px; border: 0px;" CommandName="filtro" CommandArgument="<%#pagina%>" OnCommand="PREVIOUS_Command" />
+                            <asp:Button ID="PREVIOUS" runat="server" Text="Atrás" class="btn-sm" Style="padding: 0px; border: 0px;" CommandName="filtro" CommandArgument="<%#pagina%>" OnCommand="PREVIOUS_Command" />
                         </a>
                     </li>
                     <li class="page-item mx-auto">
@@ -93,13 +97,13 @@
 
                     <li class="page-item">
                         <a class="page-link " href="#">
-                            <asp:Button ID="NEXT" runat="server" Text="ADELA" class="btn-sm" Style="padding: 0px; border: 0px;" OnCommand="NEXT_Command" />
+                            <asp:Button ID="NEXT" runat="server" Text="Sig." class="btn-sm" Style="padding: 0px; border: 0px;" OnCommand="NEXT_Command" />
                         </a>
                     </li>
 
                 </ul>
             </nav>
-            <!--Pagination-->
+            <!--Pagination-->                        
 
         </div>
     </main>

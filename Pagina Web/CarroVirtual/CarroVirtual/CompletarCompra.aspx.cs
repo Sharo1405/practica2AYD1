@@ -9,7 +9,8 @@ namespace CarroVirtual
 {
     public partial class CompletarCompra : System.Web.UI.Page
     {
-        List<ProductoCarrito> productos=null;
+        public static List<ProductoCarrito> productos=null;
+        //List<ProductoCarrito> productos=null;
 
         protected void Page_Load(object sender, EventArgs e)
         {
