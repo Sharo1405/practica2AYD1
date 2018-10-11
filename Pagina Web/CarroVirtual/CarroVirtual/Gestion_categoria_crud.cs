@@ -26,6 +26,27 @@ namespace CarroVirtual
             return categorias;
         }
 
+        //variables para pruebas bdd
+        public String nombreBDD { get; set; }
+        public String descripcionBDD { get; set; }
+
+        public String CrearCategoriaBDD()
+        {
+            SqlConnection con = Conexion.ObtenerConexion();
+            SqlCommand cmd = new SqlCommand("INSERT INTO categoria(nombre, descripcion) " +
+                "VALUES('" + nombreBDD + "', '" + descripcionBDD + "'" + ")", con);
+            int s = cmd.ExecuteNonQuery();
+            con.Close();
+
+            if (s != 0)
+            {
+
+                return "true";
+            }
+            return "false";
+        }
+        //Fin-variables para pruebas bdd
+
         public static bool CrearCategoria(Categoria categoria)
         {
             SqlConnection con = Conexion.ObtenerConexion();

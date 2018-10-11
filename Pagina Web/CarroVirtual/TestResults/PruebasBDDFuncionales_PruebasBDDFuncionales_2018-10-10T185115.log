@@ -1,0 +1,50 @@
+﻿2018-10-10T18:51:15.3629784-06:00;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.3 execution started
+2018-10-10T18:51:15.3669679-06:00;VSTestExecutionThread;Info;TestAdapter Location: D:\sharolin\Documents\Semestre 2 2018\Analisis y disenio\Practica3\practica2AYD1\Pagina Web\CarroVirtual\packages\SpecRun.Runner.1.8.3\tools\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2018-10-10T18:51:15.5036187-06:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-10-10T18:51:15.5046204-06:00;VSTestExecutionThread;Info;SpecRun: running tests in D:\sharolin\Documents\Semestre 2 2018\Analisis y disenio\Practica3\practica2AYD1\Pagina Web\CarroVirtual\PruebasBDDFuncionales\bin\Debug\PruebasBDDFuncionales.dll
+2018-10-10T18:51:15.5046204-06:00;VSTestExecutionThread;Info;Profile: PruebasBDDFuncionales
+2018-10-10T18:51:24.6167878-06:00;Thread#13;Info;Discovering target: Default
+2018-10-10T18:51:24.6167878-06:00;Thread#13;Info;Discovering tests from assembly: D:\sharolin\Documents\Semestre 2 2018\Analisis y disenio\Practica3\practica2AYD1\Pagina Web\CarroVirtual\PruebasBDDFuncionales\bin\Debug\PruebasBDDFuncionales.dll
+Appdomain Disposed
+Test Suite Dump
+#0: PruebasBDDFuncionales/PruebasBDDFuncionales - 
+#1: Default - 
+#2: PruebasBDDFuncionales - 
+#3: CrearCategoriaCorrecto - 
+#4: CrearCategoriaCorrecto - TestAssembly:PruebasBDDFuncionales/Feature:CrearCategoriaCorrecto/Scenario:CrearCategoriaCorrecto
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for PruebasBDDFuncionales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given un nombre no existente como "pruebaBDD"
+Thread#0:T:done: CrearCategoriaCorrectoSteps.GivenUnNombreNoExistenteComo("pruebaBDD") (0.0s)
+Thread#0:B:And de descripcion "Soy una prueba funcional en BDD"
+Thread#0:T:done: CrearCategoriaCorrectoSteps.GivenDeDescripcion("Soy una prueba fu...") (0.0s)
+Thread#0:B:When presiono crear categoria
+Thread#0:T:done: CrearCategoriaCorrectoSteps.WhenPresionoCrearCategoria() (0.0s)
+Thread#0:B:Then el sistema debe crear la categoria en el sistema validado con un "true"
+Thread#0:T:done: CrearCategoriaCorrectoSteps.ThenElSistemaDebeCrearLaCategoriaEnElSistemaValidadoConUn("true") (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 0.3587724 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
