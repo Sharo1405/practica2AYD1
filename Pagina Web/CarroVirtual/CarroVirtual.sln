@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarroVirtual", "CarroVirtua
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pruebas", "Pruebas\Pruebas.csproj", "{88690CD6-8952-4F46-9CFB-43978D76D162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDDPruebasFuncionales", "BDDPruebasFuncionales\BDDPruebasFuncionales.csproj", "{FD12EC0E-FB00-4986-9257-89FA8DB99821}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasBDD", "PruebasBDD\PruebasBDD.csproj", "{1180F06C-A798-418B-9FFA-95F148079750}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{88690CD6-8952-4F46-9CFB-43978D76D162}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88690CD6-8952-4F46-9CFB-43978D76D162}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88690CD6-8952-4F46-9CFB-43978D76D162}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD12EC0E-FB00-4986-9257-89FA8DB99821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD12EC0E-FB00-4986-9257-89FA8DB99821}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD12EC0E-FB00-4986-9257-89FA8DB99821}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD12EC0E-FB00-4986-9257-89FA8DB99821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1180F06C-A798-418B-9FFA-95F148079750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1180F06C-A798-418B-9FFA-95F148079750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1180F06C-A798-418B-9FFA-95F148079750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1180F06C-A798-418B-9FFA-95F148079750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

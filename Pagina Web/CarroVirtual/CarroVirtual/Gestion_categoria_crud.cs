@@ -26,6 +26,7 @@ namespace CarroVirtual
             return categorias;
         }
 
+
         //variables para pruebas bdd
         public String nombreBDD { get; set; }
         public String descripcionBDD { get; set; }
@@ -40,24 +41,33 @@ namespace CarroVirtual
 
             if (s != 0)
             {
-
+                Eliminar_categoria(nombreBDD);
                 return "true";
             }
             return "false";
         }
         //Fin-variables para pruebas bdd
 
+
         public static bool CrearCategoria(Categoria categoria)
         {
             SqlConnection con = Conexion.ObtenerConexion();
-            SqlCommand cmd = new SqlCommand("INSERT INTO categoria(nombre, descripcion) " +
-                "VALUES('" + categoria.nombre + "', '" + categoria.descripcion + "'" + ")", con);
-            int s = cmd.ExecuteNonQuery();
-            con.Close();
+            if (categoria.nombre!="") {
+                List<Categoria> categorias = ObtenerCategorias();
+                foreach(var lista in categorias){
+                    if (lista.nombre.Equals(categoria.nombre)) {
+                        return false;
+                    }
+                }
+                    SqlCommand cmd = new SqlCommand("INSERT INTO categoria(nombre, descripcion) " +
+                        "VALUES('" + categoria.nombre + "', '" + categoria.descripcion + "'" + ")", con);
+                    int s = cmd.ExecuteNonQuery();
+                    con.Close();
 
-            if (s != 0)
-            {
-                return true;
+                    if (s != 0)
+                    {
+                        return true;
+                    }
             }
             return false;
         }

@@ -16,7 +16,7 @@ namespace CarroVirtual
             if (productos.Count > 0 && factura.Nombre!="" && factura.Apellido!="" && factura.Dpi!="" &&factura.Zona!="")
             {
                 SqlConnection con = Conexion.ObtenerConexion();
-                SqlCommand cmd = new SqlCommand("INSERT INTO Factura(Nombre,Apellido,DPI,zona_entrega,fecha) VALUES('" + factura.Nombre + "', '" + factura.Apellido + "', '" + factura.Dpi + "', '" + factura.Zona + "','" + factura.Fecha + "')", con);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Factura(Nombre,Apellido,DPI,zona_entrega,fecha,estado) VALUES('" + factura.Nombre + "', '" + factura.Apellido + "', '" + factura.Dpi + "', '" + factura.Zona + "','" + factura.Fecha + "',1)", con);
                 s = cmd.ExecuteNonQuery();
                 con.Close();
 

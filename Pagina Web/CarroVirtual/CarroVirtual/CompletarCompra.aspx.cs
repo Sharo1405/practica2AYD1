@@ -31,15 +31,19 @@ namespace CarroVirtual
                 factura.Apellido = txt_apellido.Text;
                 factura.Dpi = txt_dpi.Text;
                 factura.Zona = txt_direccion.Text;
-                factura.Fecha = DateTime.Now.Date.ToString();
+                DateTime fecha = DateTime.Now;
+                string cadenafecha = fecha.ToString("yyyyMMdd");
+                factura.Fecha = cadenafecha; 
                 if (Facturacion.RealizarCompra(factura, productos) > 0)
                 {
+                    Response.Redirect("/Tienda/ListadoProductos.aspx");
                     Conexion.MsgBox("Compra realizada con exito!", this.Page, this);
                     txt_apellido.Text = "";
                     txt_nombre.Text = "";
                     txt_dpi.Text = "";
                     txt_direccion.Text = "";
                     txt_nombre.Focus();
+                    
                 }
                 else
                 {
@@ -52,6 +56,7 @@ namespace CarroVirtual
                 Conexion.MsgBox("Debe llenar todos los campos solicitados!", this.Page, this);
                 txt_nombre.Focus();
             }
+
         }
     }
 }
