@@ -69,6 +69,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Practica2\practica2AYD1\Pagina Web\CarroVirtual\PruebasBDDFuncionales\CarroCorrectoSteps.cs">
+      <Link>CarroCorrectoSteps.cs</Link>
+    </Compile>
+    <Compile Include="CarroCorrecto.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarroCorrecto.feature</DependentUpon>
+    </Compile>
     <Compile Include="CrearCategoriaCorrecto.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +87,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CarroCorrecto.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CarroCorrecto.feature.cs</LastGenOutput>
+    </None>
     <None Include="CrearCategoriaCorrecto.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CrearCategoriaCorrecto.feature.cs</LastGenOutput>
