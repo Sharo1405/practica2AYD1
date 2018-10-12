@@ -1,0 +1,101 @@
+﻿2018-10-11T22:32:30.5985166-06:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-10-11T22:32:30.6014934-06:00;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.5 execution started
+2018-10-11T22:32:30.6014934-06:00;VSTestExecutionThread;Info;TestAdapter Location: D:\sharolin\Documents\Semestre 2 2018\Analisis y disenio\Practica3\practica2AYD1\Pagina Web\CarroVirtual\packages\SpecRun.Runner.1.8.5\tools\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2018-10-11T22:32:30.6826669-06:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-10-11T22:32:30.6826669-06:00;VSTestExecutionThread;Info;SpecRun: running tests in D:\sharolin\Documents\Semestre 2 2018\Analisis y disenio\Practica3\practica2AYD1\Pagina Web\CarroVirtual\BDDPruebasFuncionales\bin\Debug\BDDPruebasFuncionales.dll
+2018-10-11T22:32:30.6826669-06:00;VSTestExecutionThread;Info;Profile: BDDPruebasFuncionales
+2018-10-11T22:32:38.7289960-06:00;Thread#15;Info;starting test run
+2018-10-11T22:32:38.7359448-06:00;Thread#15;Info;Discovering target: Default
+2018-10-11T22:32:38.7369699-06:00;Thread#15;Info;Discovering tests from assembly: D:\sharolin\Documents\Semestre 2 2018\Analisis y disenio\Practica3\practica2AYD1\Pagina Web\CarroVirtual\BDDPruebasFuncionales\bin\Debug\BDDPruebasFuncionales.dll
+Appdomain Disposed
+Test Suite Dump
+#0: BDDPruebasFuncionales/BDDPruebasFuncionales - 
+#1: Default - 
+#2: BDDPruebasFuncionales - 
+#3: crearCategoriaCorrectamente - 
+#4: crear Categoria Correctamente - TestAssembly:BDDPruebasFuncionales/Feature:crearCategoriaCorrectamente/Scenario:crear+Categoria+Correctamente
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for BDDPruebasFuncionales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given el nombre de la categoria "Alcazar"
+Thread#0:T:done: CrearCategoriaCorrectamenteSteps.GivenElNombreDeLaCategoria("Alcazar") (0.0s)
+Thread#0:B:And la descripcion "somos el grupo de analisis 1"
+Thread#0:T:done: CrearCategoriaCorrectamenteSteps.GivenLaDescripcion("somos el grupo de...") (0.0s)
+Thread#0:B:When cuando presiones el boton de crea la nueva categoria
+Thread#0:T:error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Thread#0:B:Then se debe crear la categoria con su nombre y descripcion esto validado con un "si"
+Thread#0:T:skipped because of previous errors
+Thread#0:TestItem#4:Scheduler: reschedule tests for testitem #4
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 1
+Thread#0: Test #4/0 is finished on thread #0 as Failed within 19.2705925 seconds
+Thread#0: Test #4/1 is started on thread #0
+Thread#0:B:Given el nombre de la categoria "Alcazar"
+Thread#0:T:done: CrearCategoriaCorrectamenteSteps.GivenElNombreDeLaCategoria("Alcazar") (0.0s)
+Thread#0:B:And la descripcion "somos el grupo de analisis 1"
+Thread#0:T:done: CrearCategoriaCorrectamenteSteps.GivenLaDescripcion("somos el grupo de...") (0.0s)
+Thread#0:B:When cuando presiones el boton de crea la nueva categoria
+Thread#0:T:error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Thread#0:B:Then se debe crear la categoria con su nombre y descripcion esto validado con un "si"
+Thread#0:T:skipped because of previous errors
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #4
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 2
+Thread#0: Test #4/1 is finished on thread #0 as Failed within 0.0029925 seconds
+Thread#0: Test #4/2 is started on thread #0
+Thread#0:B:Given el nombre de la categoria "Alcazar"
+Thread#0:T:done: CrearCategoriaCorrectamenteSteps.GivenElNombreDeLaCategoria("Alcazar") (0.0s)
+Thread#0:B:And la descripcion "somos el grupo de analisis 1"
+Thread#0:T:done: CrearCategoriaCorrectamenteSteps.GivenLaDescripcion("somos el grupo de...") (0.0s)
+Thread#0:B:When cuando presiones el boton de crea la nueva categoria
+Thread#0:T:error: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Thread#0:B:Then se debe crear la categoria con su nombre y descripcion esto validado con un "si"
+Thread#0:T:skipped because of previous errors
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #4/2 is finished on thread #0 as Failed within 0.0029929 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+2018-10-11T22:32:58.1701275-06:00;Thread#15;Info;test run finished
+2018-10-11T22:32:58.1701275-06:00;Thread#15;Info;publishing test results
+2018-10-11T22:32:58.1760848-06:00;Thread#15;Info;test results published
+2018-10-11T22:32:58.1760848-06:00;Thread#15;Info;generating reports
+2018-10-11T22:32:58.1810983-06:00;Thread#15;Info;creating 1 report(s)
+2018-10-11T22:32:58.1810983-06:00;Thread#15;Info;generate Report ReportTemplate.cshtml
+2018-10-11T22:32:59.7542128-06:00;Thread#15;Info;reports generated
+Total: 1 (test executions: 3)
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1
+2018-10-11T22:32:59.7571983-06:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2018-10-11T22:32:59.7571983-06:00;VSTestExecutionThread;Info;adding Test Execution Report 'D:\sharolin\Documents\Semestre 2 2018\Analisis y disenio\Practica3\practica2AYD1\Pagina Web\CarroVirtual\TestResults\BDDPruebasFuncionales_BDDPruebasFuncionales_2018-10-11T223230.html'
+2018-10-11T22:32:59.7661755-06:00;VSTestExecutionThread;Info;Log file: file:///D:\sharolin\Documents\Semestre%202%202018\Analisis%20y%20disenio\Practica3\practica2AYD1\Pagina%20Web\CarroVirtual\TestResults\BDDPruebasFuncionales_BDDPruebasFuncionales_2018-10-11T223230.log
