@@ -1,0 +1,85 @@
+﻿2018-10-12T00:19:02.1257927-06:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2018-10-12T00:19:02.1348093-06:00;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.5 execution started
+2018-10-12T00:19:02.1348093-06:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\sharolin\Documents\AYD1Practica3\practica3AYD1\Pagina Web\CarroVirtual\PruebasBDD\bin\Debug\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2018-10-12T00:19:02.2826915-06:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2018-10-12T00:19:02.2836941-06:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\sharolin\Documents\AYD1Practica3\practica3AYD1\Pagina Web\CarroVirtual\PruebasBDD\bin\Debug\PruebasBDD.dll
+2018-10-12T00:19:02.2836941-06:00;VSTestExecutionThread;Info;Profile: PruebasBDD
+2018-10-12T00:19:13.3780051-06:00;Thread#15;Info;starting test run
+2018-10-12T00:19:13.3829895-06:00;Thread#15;Info;Discovering target: Default
+2018-10-12T00:19:13.3839879-06:00;Thread#15;Info;Discovering tests from assembly: C:\Users\sharolin\Documents\AYD1Practica3\practica3AYD1\Pagina Web\CarroVirtual\PruebasBDD\bin\Debug\PruebasBDD.dll
+Appdomain Disposed
+Test Suite Dump
+#0: PruebasBDD/PruebasBDD - 
+#1: Default - 
+#2: PruebasBDD - 
+#3: calculadora - 
+#5: crearCategoriasCorrectamente - 
+#4: Add two numbers - TestAssembly:PruebasBDD/Feature:calculadora/Scenario:Add+two+numbers
+#6: crear Categorias Correctamente - TestAssembly:PruebasBDD/Feature:crearCategoriasCorrectamente/Scenario:crear+Categorias+Correctamente
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for PruebasBDD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I have entered 50 into the calculator
+Thread#0:T:pending: CalculadoraSteps.GivenIHaveEnteredIntoTheCalculator(50)
+Thread#0:B:And I have entered 70 into the calculator
+Thread#0:T:skipped because of previous errors
+Thread#0:B:When I press add and accept
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Then the result should be 120 on the screen
+Thread#0:T:skipped because of previous errors
+Thread#0:T:Pending: One or more step definitions are not implemented yet.
+Thread#0:T:  CalculadoraSteps.GivenIHaveEnteredIntoTheCalculator(50)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #6 from normal test queue 
+Thread#0:Scheduler: considering testitem #6 for thread 0
+Thread#0:TestItem#6:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#6:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#6:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #6 for thread 0
+Thread#0:Scheduler: Test #6 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Pending within 0.5416871 seconds
+Thread#0: Test #6/0 is started on thread #0
+Thread#0:B:Given el nombre de la categoria "BDDpruebaNueva"
+Thread#0:T:done: CrearCategoriasCorrectamenteSteps.GivenElNombreDeLaCategoria("BDDpruebaNueva") (0.0s)
+Thread#0:B:And la descripcion "somos el grupo 7 de analisis 1"
+Thread#0:T:done: CrearCategoriasCorrectamenteSteps.GivenLaDescripcion("somos el grupo 7 ...") (0.0s)
+Thread#0:B:When cuando presiones el boton de crea la nueva categoria
+Thread#0:T:done: CrearCategoriasCorrectamenteSteps.WhenCuandoPresionesElBotonDeCreaLaNuevaCategoria() (0.3s)
+Thread#0:B:Then se debe crear la categoria con su nombre y descripcion esto validado con un "true"
+Thread#0:T:done: CrearCategoriasCorrectamenteSteps.ThenSeDebeCrearLaCategoriaConSuNombreYDescripcionEstoValidadoConUn("true") (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #6/0 is finished on thread #0 as Succeeded within 0.2778519 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+2018-10-12T00:19:14.3733505-06:00;Thread#15;Info;test run finished
+2018-10-12T00:19:14.3733505-06:00;Thread#15;Info;publishing test results
+2018-10-12T00:19:14.3993334-06:00;Thread#15;Info;test results published
+2018-10-12T00:19:14.4003356-06:00;Thread#15;Info;generating reports
+2018-10-12T00:19:14.4063435-06:00;Thread#15;Info;creating 1 report(s)
+2018-10-12T00:19:14.4063435-06:00;Thread#15;Info;generate Report ReportTemplate.cshtml
+2018-10-12T00:19:15.3920005-06:00;Thread#15;Info;reports generated
+Total: 2
+Succeeded: 1
+Ignored: 0
+Pending: 1
+Skipped: 0
+Failed: 0
+2018-10-12T00:19:15.3949877-06:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2018-10-12T00:19:15.3949877-06:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\sharolin\Documents\AYD1Practica3\practica3AYD1\Pagina Web\CarroVirtual\TestResults\PruebasBDD_PruebasBDD_2018-10-12T001902.html'
+2018-10-12T00:19:15.4090545-06:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\sharolin\Documents\AYD1Practica3\practica3AYD1\Pagina%20Web\CarroVirtual\TestResults\PruebasBDD_PruebasBDD_2018-10-12T001902.log
