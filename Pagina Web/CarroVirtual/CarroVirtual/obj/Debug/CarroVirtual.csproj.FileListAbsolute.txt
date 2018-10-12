@@ -404,7 +404,6 @@ C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 3\practica2AYD1\Pagina Web\
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 3\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\es\System.Net.Http.Formatting.resources.dll
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 3\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\es\System.Web.Http.resources.dll
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 3\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\bin\es\System.Web.Http.WebHost.resources.dll
-C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 3\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.csprojResolveAssemblyReference.cache
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 3\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.csproj.CoreCompileInputs.cache
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 3\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.csproj.CopyComplete
 C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 3\practica2AYD1\Pagina Web\CarroVirtual\CarroVirtual\obj\Debug\CarroVirtual.dll

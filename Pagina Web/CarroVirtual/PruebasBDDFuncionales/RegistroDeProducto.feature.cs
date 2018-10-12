@@ -17,5 +17,5 @@ TechTalk.SpecFlow.SpecFlowException: Unable to find plugin in the plugin search 
 
 
 Command: C:\Users\Koka\AppData\Local\Microsoft\VisualStudio\15.0_167c9211\Extensions\lpa5v32i.ykk\TechTalk.SpecFlow.VisualStudio.CodeBehindGenerator.exe
-Parameters: GenerateTestFile --featurefile C:\Users\Koka\AppData\Local\Temp\tmp5691.tmp --outputdirectory C:\Users\Koka\AppData\Local\Temp --projectsettingsfile C:\Users\Koka\AppData\Local\Temp\tmp5681.tmp
+Parameters: GenerateTestFile --featurefile C:\Users\Koka\AppData\Local\Temp\tmp5B56.tmp --outputdirectory C:\Users\Koka\AppData\Local\Temp --projectsettingsfile C:\Users\Koka\AppData\Local\Temp\tmp5B55.tmp
 Working Directory: C:\Users\Koka\Documents\Ingenieria\AYD1\Lab\Practica 3\practica2AYD1\Pagina Web\CarroVirtual\packages\SpecFlow.2.4.0\tools
